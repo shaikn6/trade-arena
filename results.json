@@ -1,0 +1,1030 @@
+{
+  "per_asset": {
+    "AAPL": {
+      "buy & hold": {
+        "cagr": 0.24751365177057338,
+        "sharpe": 0.9131801104973277,
+        "max_drawdown": -0.38515901035483735,
+        "turnover_per_year": 0.08597748208802457,
+        "time_in_market": 1.0,
+        "final_wealth": 13.094785559394683,
+        "sharpe_gross": 0.913507429858348
+      },
+      "SMA 50/200 crossover": {
+        "cagr": 0.1507693746120904,
+        "sharpe": 0.6956992399790529,
+        "max_drawdown": -0.45723054415245257,
+        "turnover_per_year": 1.1177072671443193,
+        "time_in_market": 0.7584442169907881,
+        "final_wealth": 5.12096680698566,
+        "sharpe_gross": 0.7003153141183933,
+        "sharpe_minus_bh": -0.218,
+        "sharpe_minus_bh_ci95": [
+          -0.505,
+          0.068
+        ]
+      },
+      "12-1 momentum": {
+        "cagr": 0.13095933007967497,
+        "sharpe": 0.5944787989680269,
+        "max_drawdown": -0.38237956315512356,
+        "turnover_per_year": 5.932446264073695,
+        "time_in_market": 0.8164448993517571,
+        "final_wealth": 4.184459504415185,
+        "sharpe_gross": 0.6167133376903586,
+        "sharpe_minus_bh": -0.319,
+        "sharpe_minus_bh_ci95": [
+          -0.552,
+          -0.087
+        ]
+      },
+      "logistic regression": {
+        "cagr": 0.10963832822299158,
+        "sharpe": 0.5679542636145226,
+        "max_drawdown": -0.42929708621494467,
+        "turnover_per_year": 54.76765609007165,
+        "time_in_market": 0.7454793585806891,
+        "final_wealth": 3.3535384192730056,
+        "sharpe_gross": 0.8080049667652233,
+        "sharpe_minus_bh": -0.345,
+        "sharpe_minus_bh_ci95": [
+          -0.701,
+          -0.003
+        ]
+      },
+      "gradient boosting": {
+        "cagr": 0.17177391854338997,
+        "sharpe": 0.8257040429558581,
+        "max_drawdown": -0.2808996961058894,
+        "turnover_per_year": 70.93142272262027,
+        "time_in_market": 0.629136813374275,
+        "final_wealth": 6.320031982160719,
+        "sharpe_gross": 1.1472327079960154,
+        "sharpe_minus_bh": -0.087,
+        "sharpe_minus_bh_ci95": [
+          -0.531,
+          0.358
+        ]
+      },
+      "MLP": {
+        "cagr": 0.17937434042210487,
+        "sharpe": 0.827056027287019,
+        "max_drawdown": -0.3227793413291635,
+        "turnover_per_year": 57.94882292732856,
+        "time_in_market": 0.6131013306038895,
+        "final_wealth": 6.813609120641381,
+        "sharpe_gross": 1.0778897012668758,
+        "sharpe_minus_bh": -0.086,
+        "sharpe_minus_bh_ci95": [
+          -0.434,
+          0.247
+        ]
+      },
+      "CONTROL: shuffled labels": {
+        "cagr": 0.10202164671006542,
+        "sharpe": 0.5511534486995049,
+        "max_drawdown": -0.4431071615190423,
+        "turnover_per_year": 63.53735926305015,
+        "time_in_market": 0.6533606277720915,
+        "final_wealth": 3.0953612297208415,
+        "sharpe_gross": 0.8406717209436094,
+        "sharpe_minus_bh": -0.362,
+        "sharpe_minus_bh_ci95": [
+          -0.728,
+          -0.025
+        ]
+      }
+    },
+    "BTC-USD": {
+      "buy & hold": {
+        "cagr": 0.4817391632647525,
+        "sharpe": 0.9543901279697898,
+        "max_drawdown": -0.7663456370856909,
+        "turnover_per_year": 0.13040371561271882,
+        "time_in_market": 1.0,
+        "final_wealth": 20.396801508908744,
+        "sharpe_gross": 0.9548030508288019
+      },
+      "SMA 50/200 crossover": {
+        "cagr": 0.2999001407573936,
+        "sharpe": 0.7867328895106337,
+        "max_drawdown": -0.6349726136901858,
+        "turnover_per_year": 2.086459449803501,
+        "time_in_market": 0.5630582350839586,
+        "final_wealth": 7.473395808189787,
+        "sharpe_gross": 0.7953839103697407,
+        "sharpe_minus_bh": -0.168,
+        "sharpe_minus_bh_ci95": [
+          -0.624,
+          0.318
+        ]
+      },
+      "12-1 momentum": {
+        "cagr": 0.4610576942164073,
+        "sharpe": 1.0197733934766913,
+        "max_drawdown": -0.5306185040984173,
+        "turnover_per_year": 7.563415505537692,
+        "time_in_market": 0.6852447302608075,
+        "final_wealth": 18.312623470950623,
+        "sharpe_gross": 1.0508734694618511,
+        "sharpe_minus_bh": 0.065,
+        "sharpe_minus_bh_ci95": [
+          -0.398,
+          0.547
+        ]
+      },
+      "logistic regression": {
+        "cagr": 0.33756304015557115,
+        "sharpe": 0.807155673287245,
+        "max_drawdown": -0.747038124006355,
+        "turnover_per_year": 56.72561629153269,
+        "time_in_market": 0.8460164344408717,
+        "final_wealth": 9.303364477585568,
+        "sharpe_gross": 1.0137000181910523,
+        "sharpe_minus_bh": -0.147,
+        "sharpe_minus_bh_ci95": [
+          -0.447,
+          0.137
+        ]
+      },
+      "gradient boosting": {
+        "cagr": 0.34511340204467245,
+        "sharpe": 0.8379627923698654,
+        "max_drawdown": -0.7741994653190282,
+        "turnover_per_year": 97.15076813147552,
+        "time_in_market": 0.6913183279742765,
+        "final_wealth": 9.713745958256041,
+        "sharpe_gross": 1.2230370901344954,
+        "sharpe_minus_bh": -0.116,
+        "sharpe_minus_bh_ci95": [
+          -0.56,
+          0.327
+        ]
+      },
+      "MLP": {
+        "cagr": 0.4144913598424562,
+        "sharpe": 0.9315559099826899,
+        "max_drawdown": -0.7675027966976022,
+        "turnover_per_year": 78.11182565201858,
+        "time_in_market": 0.7109682029296177,
+        "final_wealth": 14.2849051585444,
+        "sharpe_gross": 1.2383478923139695,
+        "sharpe_minus_bh": -0.023,
+        "sharpe_minus_bh_ci95": [
+          -0.443,
+          0.361
+        ]
+      },
+      "CONTROL: shuffled labels": {
+        "cagr": 0.09179052439846602,
+        "sharpe": 0.4313327077569548,
+        "max_drawdown": -0.761174158212069,
+        "turnover_per_year": 85.1536262951054,
+        "time_in_market": 0.7116827438370846,
+        "final_wealth": 1.9609707694361977,
+        "sharpe_gross": 0.7709834699845504,
+        "sharpe_minus_bh": -0.523,
+        "sharpe_minus_bh_ci95": [
+          -0.929,
+          -0.133
+        ]
+      }
+    },
+    "ETH-USD": {
+      "buy & hold": {
+        "cagr": -0.08726632990618832,
+        "sharpe": 0.2122424401008357,
+        "max_drawdown": -0.7405353362619087,
+        "turnover_per_year": 0.21432765707574866,
+        "time_in_market": 1.0,
+        "final_wealth": 0.6530932819996592,
+        "sharpe_gross": 0.21285967126599964
+      },
+      "SMA 50/200 crossover": {
+        "cagr": -0.07384567276171417,
+        "sharpe": 0.015606552475061531,
+        "max_drawdown": -0.6184488830034304,
+        "turnover_per_year": 2.143276570757487,
+        "time_in_market": 0.4286553141514974,
+        "final_wealth": 0.6991216861616695,
+        "sharpe_gross": 0.026091899791868337,
+        "sharpe_minus_bh": -0.197,
+        "sharpe_minus_bh_ci95": [
+          -1.036,
+          0.648
+        ]
+      },
+      "12-1 momentum": {
+        "cagr": -0.12624802655557676,
+        "sharpe": -0.07801166391763795,
+        "max_drawdown": -0.7866142373538212,
+        "turnover_per_year": 13.716970052847914,
+        "time_in_market": 0.5366999412800939,
+        "final_wealth": 0.5327600509769194,
+        "sharpe_gross": -0.016778033633595882,
+        "sharpe_minus_bh": -0.29,
+        "sharpe_minus_bh_ci95": [
+          -1.077,
+          0.513
+        ]
+      },
+      "logistic regression": {
+        "cagr": -0.2512261506869522,
+        "sharpe": -0.2829588908556294,
+        "max_drawdown": -0.7957565320719951,
+        "turnover_per_year": 151.1009982384028,
+        "time_in_market": 0.5008807985907222,
+        "final_wealth": 0.2592693630678215,
+        "sharpe_gross": 0.28794539987565715,
+        "sharpe_minus_bh": -0.495,
+        "sharpe_minus_bh_ci95": [
+          -1.105,
+          0.107
+        ]
+      },
+      "gradient boosting": {
+        "cagr": -0.29584760073135297,
+        "sharpe": -0.506357734485449,
+        "max_drawdown": -0.8313506163385538,
+        "turnover_per_year": 129.66823253082794,
+        "time_in_market": 0.40399295361127424,
+        "final_wealth": 0.19464811982741442,
+        "sharpe_gross": 0.04358245801752016,
+        "sharpe_minus_bh": -0.719,
+        "sharpe_minus_bh_ci95": [
+          -1.48,
+          0.013
+        ]
+      },
+      "MLP": {
+        "cagr": -0.15314778631211456,
+        "sharpe": -0.1289475269043426,
+        "max_drawdown": -0.7462800487764387,
+        "turnover_per_year": 78.65825014679976,
+        "time_in_market": 0.30358191426893716,
+        "final_wealth": 0.4604348514244343,
+        "sharpe_gross": 0.21124973711418776,
+        "sharpe_minus_bh": -0.341,
+        "sharpe_minus_bh_ci95": [
+          -1.082,
+          0.382
+        ]
+      },
+      "CONTROL: shuffled labels": {
+        "cagr": -0.30305568688980034,
+        "sharpe": -0.34046655624529415,
+        "max_drawdown": -0.8914184684929076,
+        "turnover_per_year": 101.80563711098061,
+        "time_in_market": 0.7058132706987669,
+        "final_wealth": 0.18552434148205718,
+        "sharpe_gross": 0.013471752870963007,
+        "sharpe_minus_bh": -0.553,
+        "sharpe_minus_bh_ci95": [
+          -1.095,
+          -0.01
+        ]
+      }
+    },
+    "GLD": {
+      "buy & hold": {
+        "cagr": 0.11579884868768664,
+        "sharpe": 0.7577740865684136,
+        "max_drawdown": -0.26404517857029663,
+        "turnover_per_year": 0.08597748208802457,
+        "time_in_market": 1.0,
+        "final_wealth": 3.5765923317994845,
+        "sharpe_gross": 0.758269832987678
+      },
+      "SMA 50/200 crossover": {
+        "cagr": 0.07363825232994992,
+        "sharpe": 0.578230705748532,
+        "max_drawdown": -0.27058391787606195,
+        "turnover_per_year": 1.375639713408393,
+        "time_in_market": 0.6656431252132378,
+        "final_wealth": 2.285112861086967,
+        "sharpe_gross": 0.5881402160891502,
+        "sharpe_minus_bh": -0.18,
+        "sharpe_minus_bh_ci95": [
+          -0.492,
+          0.12
+        ]
+      },
+      "12-1 momentum": {
+        "cagr": 0.07487580439602559,
+        "sharpe": 0.5778388419251199,
+        "max_drawdown": -0.3036405826104178,
+        "turnover_per_year": 4.728761514841351,
+        "time_in_market": 0.6656431252132378,
+        "final_wealth": 2.3159370067810157,
+        "sharpe_gross": 0.6110489065176965,
+        "sharpe_minus_bh": -0.18,
+        "sharpe_minus_bh_ci95": [
+          -0.47,
+          0.097
+        ]
+      },
+      "logistic regression": {
+        "cagr": 0.049067440890654845,
+        "sharpe": 0.42386035789232446,
+        "max_drawdown": -0.4168119042629762,
+        "turnover_per_year": 71.79119754350052,
+        "time_in_market": 0.6806550665301945,
+        "final_wealth": 1.7456752401074878,
+        "sharpe_gross": 0.9606055614041991,
+        "sharpe_minus_bh": -0.334,
+        "sharpe_minus_bh_ci95": [
+          -0.674,
+          0.037
+        ]
+      },
+      "gradient boosting": {
+        "cagr": 0.02932990490261478,
+        "sharpe": 0.29673042871419497,
+        "max_drawdown": -0.44805415422658723,
+        "turnover_per_year": 75.40225179119754,
+        "time_in_market": 0.5673831456840669,
+        "final_wealth": 1.399657718346787,
+        "sharpe_gross": 0.9124275636386264,
+        "sharpe_minus_bh": -0.461,
+        "sharpe_minus_bh_ci95": [
+          -0.838,
+          -0.094
+        ]
+      },
+      "MLP": {
+        "cagr": 0.03287119597135768,
+        "sharpe": 0.3276988641565949,
+        "max_drawdown": -0.2975907657544723,
+        "turnover_per_year": 54.595701125895594,
+        "time_in_market": 0.47969976117366087,
+        "final_wealth": 1.456700573111846,
+        "sharpe_gross": 0.7798537576746205,
+        "sharpe_minus_bh": -0.43,
+        "sharpe_minus_bh_ci95": [
+          -0.838,
+          -0.048
+        ]
+      },
+      "CONTROL: shuffled labels": {
+        "cagr": -0.029804339256746526,
+        "sharpe": -0.1601232466613285,
+        "max_drawdown": -0.5364581813620535,
+        "turnover_per_year": 82.71033776867962,
+        "time_in_market": 0.6820197884680996,
+        "final_wealth": 0.703333767066277,
+        "sharpe_gross": 0.46198935802596064,
+        "sharpe_minus_bh": -0.918,
+        "sharpe_minus_bh_ci95": [
+          -1.216,
+          -0.615
+        ]
+      }
+    },
+    "IWM": {
+      "buy & hold": {
+        "cagr": 0.09466906868916114,
+        "sharpe": 0.5171857205015952,
+        "max_drawdown": -0.4113327895109655,
+        "turnover_per_year": 0.08597748208802457,
+        "time_in_market": 1.0,
+        "final_wealth": 2.8634982321295896,
+        "sharpe_gross": 0.5175833582736675
+      },
+      "SMA 50/200 crossover": {
+        "cagr": 0.023177929022126564,
+        "sharpe": 0.2209789438057706,
+        "max_drawdown": -0.5057838284865264,
+        "turnover_per_year": 1.4616171954964174,
+        "time_in_market": 0.7106789491641078,
+        "final_wealth": 1.3053936857712722,
+        "sharpe_gross": 0.229627244889889,
+        "sharpe_minus_bh": -0.296,
+        "sharpe_minus_bh_ci95": [
+          -0.655,
+          0.047
+        ]
+      },
+      "12-1 momentum": {
+        "cagr": 0.00291085125597057,
+        "sharpe": 0.10433385263864921,
+        "max_drawdown": -0.529028783654748,
+        "turnover_per_year": 7.995905834186284,
+        "time_in_market": 0.6977140907540089,
+        "final_wealth": 1.0343847369549386,
+        "sharpe_gross": 0.1504900632905721,
+        "sharpe_minus_bh": -0.413,
+        "sharpe_minus_bh_ci95": [
+          -0.724,
+          -0.098
+        ]
+      },
+      "logistic regression": {
+        "cagr": 0.04833869848035466,
+        "sharpe": 0.3280582529786869,
+        "max_drawdown": -0.4101861062366605,
+        "turnover_per_year": 16.76560900716479,
+        "time_in_market": 0.9177755032412146,
+        "final_wealth": 1.7316229735855517,
+        "sharpe_gross": 0.4067652027248469,
+        "sharpe_minus_bh": -0.189,
+        "sharpe_minus_bh_ci95": [
+          -0.391,
+          0.023
+        ]
+      },
+      "gradient boosting": {
+        "cagr": -0.01391580650588431,
+        "sharpe": 0.026693237982088724,
+        "max_drawdown": -0.5379953772666415,
+        "turnover_per_year": 65.08495394063459,
+        "time_in_market": 0.7447969976117366,
+        "final_wealth": 0.8495989997669228,
+        "sharpe_gross": 0.35953788212628096,
+        "sharpe_minus_bh": -0.491,
+        "sharpe_minus_bh_ci95": [
+          -0.816,
+          -0.169
+        ]
+      },
+      "MLP": {
+        "cagr": 0.02252035519530926,
+        "sharpe": 0.2118137798368032,
+        "max_drawdown": -0.4316715975936064,
+        "turnover_per_year": 54.42374616171955,
+        "time_in_market": 0.7041965199590583,
+        "final_wealth": 1.2956691907629896,
+        "sharpe_gross": 0.48252186916338324,
+        "sharpe_minus_bh": -0.305,
+        "sharpe_minus_bh_ci95": [
+          -0.561,
+          -0.07
+        ]
+      },
+      "CONTROL: shuffled labels": {
+        "cagr": -0.04119961882265033,
+        "sharpe": -0.11688254475810049,
+        "max_drawdown": -0.599125615426964,
+        "turnover_per_year": 65.4288638689867,
+        "time_in_market": 0.7291026953258274,
+        "final_wealth": 0.6130297360701729,
+        "sharpe_gross": 0.21810813690819994,
+        "sharpe_minus_bh": -0.634,
+        "sharpe_minus_bh_ci95": [
+          -0.914,
+          -0.369
+        ]
+      }
+    },
+    "JPM": {
+      "buy & hold": {
+        "cagr": 0.19211150188073445,
+        "sharpe": 0.7871148409252947,
+        "max_drawdown": -0.43626503183821874,
+        "turnover_per_year": 0.08597748208802457,
+        "time_in_market": 1.0,
+        "final_wealth": 7.720367544616172,
+        "sharpe_gross": 0.7874643582979083
+      },
+      "SMA 50/200 crossover": {
+        "cagr": 0.13145830229239253,
+        "sharpe": 0.6690153205035239,
+        "max_drawdown": -0.4362650318382185,
+        "turnover_per_year": 1.1177072671443193,
+        "time_in_market": 0.7806209484817468,
+        "final_wealth": 4.205982501957063,
+        "sharpe_gross": 0.6741993224238051,
+        "sharpe_minus_bh": -0.118,
+        "sharpe_minus_bh_ci95": [
+          -0.403,
+          0.19
+        ]
+      },
+      "12-1 momentum": {
+        "cagr": 0.12759615758112952,
+        "sharpe": 0.645207657395487,
+        "max_drawdown": -0.43626503183821874,
+        "turnover_per_year": 5.244626407369498,
+        "time_in_market": 0.7604912998976459,
+        "final_wealth": 4.041996101333339,
+        "sharpe_gross": 0.6685368141145057,
+        "sharpe_minus_bh": -0.142,
+        "sharpe_minus_bh_ci95": [
+          -0.412,
+          0.162
+        ]
+      },
+      "logistic regression": {
+        "cagr": 0.06973997841601487,
+        "sharpe": 0.4091577464853719,
+        "max_drawdown": -0.44097537542512355,
+        "turnover_per_year": 58.89457523029682,
+        "time_in_market": 0.6827021494370522,
+        "final_wealth": 2.190451589291926,
+        "sharpe_gross": 0.6683513993878876,
+        "sharpe_minus_bh": -0.378,
+        "sharpe_minus_bh_ci95": [
+          -0.778,
+          -0.005
+        ]
+      },
+      "gradient boosting": {
+        "cagr": 0.027666080306540053,
+        "sharpe": 0.23371046181018257,
+        "max_drawdown": -0.4659155168242193,
+        "turnover_per_year": 77.29375639713408,
+        "time_in_market": 0.620948481746844,
+        "final_wealth": 1.3735684472789362,
+        "sharpe_gross": 0.5827741036478403,
+        "sharpe_minus_bh": -0.553,
+        "sharpe_minus_bh_ci95": [
+          -0.937,
+          -0.2
+        ]
+      },
+      "MLP": {
+        "cagr": 0.020738433936229317,
+        "sharpe": 0.2036733032659281,
+        "max_drawdown": -0.4627883108770562,
+        "turnover_per_year": 62.333674513817805,
+        "time_in_market": 0.5629477993858751,
+        "final_wealth": 1.2696492140149374,
+        "sharpe_gross": 0.47831102940796444,
+        "sharpe_minus_bh": -0.584,
+        "sharpe_minus_bh_ci95": [
+          -0.902,
+          -0.313
+        ]
+      },
+      "CONTROL: shuffled labels": {
+        "cagr": 0.09356369253394625,
+        "sharpe": 0.5110265241558137,
+        "max_drawdown": -0.35600723732066997,
+        "turnover_per_year": 83.05424769703173,
+        "time_in_market": 0.6455134766291368,
+        "final_wealth": 2.8300471876272786,
+        "sharpe_gross": 0.8819133639634503,
+        "sharpe_minus_bh": -0.276,
+        "sharpe_minus_bh_ci95": [
+          -0.642,
+          0.052
+        ]
+      }
+    },
+    "QQQ": {
+      "buy & hold": {
+        "cagr": 0.19012649446631635,
+        "sharpe": 0.9036109152352294,
+        "max_drawdown": -0.3511871252765062,
+        "turnover_per_year": 0.08597748208802457,
+        "time_in_market": 1.0,
+        "final_wealth": 7.5721641482246325,
+        "sharpe_gross": 0.9040286447715248
+      },
+      "SMA 50/200 crossover": {
+        "cagr": 0.1582361488661148,
+        "sharpe": 0.8631897911463754,
+        "max_drawdown": -0.285593832529096,
+        "turnover_per_year": 1.1177072671443193,
+        "time_in_market": 0.8352098259979529,
+        "final_wealth": 5.521044017064217,
+        "sharpe_gross": 0.8690446223006648,
+        "sharpe_minus_bh": -0.04,
+        "sharpe_minus_bh_ci95": [
+          -0.337,
+          0.265
+        ]
+      },
+      "12-1 momentum": {
+        "cagr": 0.14445812516828593,
+        "sharpe": 0.7733678458520232,
+        "max_drawdown": -0.2855938325290962,
+        "turnover_per_year": 4.728761514841351,
+        "time_in_market": 0.8710337768679631,
+        "final_wealth": 4.803665141497975,
+        "sharpe_gross": 0.7971150905861277,
+        "sharpe_minus_bh": -0.13,
+        "sharpe_minus_bh_ci95": [
+          -0.368,
+          0.116
+        ]
+      },
+      "logistic regression": {
+        "cagr": 0.10972296140756299,
+        "sharpe": 0.6344837580027196,
+        "max_drawdown": -0.3479457613363335,
+        "turnover_per_year": 23.815762538382803,
+        "time_in_market": 0.8969634936881611,
+        "final_wealth": 3.3565145628217485,
+        "sharpe_gross": 0.7578461616975231,
+        "sharpe_minus_bh": -0.269,
+        "sharpe_minus_bh_ci95": [
+          -0.535,
+          -0.015
+        ]
+      },
+      "gradient boosting": {
+        "cagr": 0.07793835152650375,
+        "sharpe": 0.47172101929192595,
+        "max_drawdown": -0.3605019800945466,
+        "turnover_per_year": 53.220061412487205,
+        "time_in_market": 0.8106448311156602,
+        "final_wealth": 2.3938579465114453,
+        "sharpe_gross": 0.7349421343648221,
+        "sharpe_minus_bh": -0.432,
+        "sharpe_minus_bh_ci95": [
+          -0.672,
+          -0.223
+        ]
+      },
+      "MLP": {
+        "cagr": 0.12538323588607136,
+        "sharpe": 0.6863078928971049,
+        "max_drawdown": -0.3268394092270227,
+        "turnover_per_year": 43.93449334698055,
+        "time_in_market": 0.7836915728420334,
+        "final_wealth": 3.9506903514359872,
+        "sharpe_gross": 0.9045935340045307,
+        "sharpe_minus_bh": -0.217,
+        "sharpe_minus_bh_ci95": [
+          -0.456,
+          0.026
+        ]
+      },
+      "CONTROL: shuffled labels": {
+        "cagr": 0.11868682008040277,
+        "sharpe": 0.6576657687880735,
+        "max_drawdown": -0.3531169444401927,
+        "turnover_per_year": 44.1064483111566,
+        "time_in_market": 0.8474923234390993,
+        "final_wealth": 3.685755253839519,
+        "sharpe_gross": 0.8774412688649595,
+        "sharpe_minus_bh": -0.246,
+        "sharpe_minus_bh_ci95": [
+          -0.469,
+          -0.034
+        ]
+      }
+    },
+    "SPY": {
+      "buy & hold": {
+        "cagr": 0.13839263473625318,
+        "sharpe": 0.8257923173520073,
+        "max_drawdown": -0.33717270361192986,
+        "turnover_per_year": 0.08597748208802457,
+        "time_in_market": 1.0,
+        "final_wealth": 4.515756023980784,
+        "sharpe_gross": 0.826325559233768
+      },
+      "SMA 50/200 crossover": {
+        "cagr": 0.08444117703957166,
+        "sharpe": 0.6201167888026629,
+        "max_drawdown": -0.33717270361192986,
+        "turnover_per_year": 1.1177072671443193,
+        "time_in_market": 0.8178096212896623,
+        "final_wealth": 2.5673158740307715,
+        "sharpe_gross": 0.6277365393696362,
+        "sharpe_minus_bh": -0.206,
+        "sharpe_minus_bh_ci95": [
+          -0.496,
+          0.105
+        ]
+      },
+      "12-1 momentum": {
+        "cagr": 0.0979716828066668,
+        "sharpe": 0.6617292298027181,
+        "max_drawdown": -0.33717270361192986,
+        "turnover_per_year": 6.276356192425793,
+        "time_in_market": 0.8665984305697714,
+        "final_wealth": 2.9656070935590284,
+        "sharpe_gross": 0.7008588193101187,
+        "sharpe_minus_bh": -0.164,
+        "sharpe_minus_bh_ci95": [
+          -0.369,
+          0.067
+        ]
+      },
+      "logistic regression": {
+        "cagr": 0.09299726276916576,
+        "sharpe": 0.6060817323311836,
+        "max_drawdown": -0.33717270361192986,
+        "turnover_per_year": 17.969293756397132,
+        "time_in_market": 0.8843398157625384,
+        "final_wealth": 2.813044578783576,
+        "sharpe_gross": 0.7116859149695416,
+        "sharpe_minus_bh": -0.22,
+        "sharpe_minus_bh_ci95": [
+          -0.361,
+          -0.094
+        ]
+      },
+      "gradient boosting": {
+        "cagr": 0.05116011807173937,
+        "sharpe": 0.38349786253462526,
+        "max_drawdown": -0.3113644486552255,
+        "turnover_per_year": 56.14329580348004,
+        "time_in_market": 0.7823268509041282,
+        "final_wealth": 1.7866095598084784,
+        "sharpe_gross": 0.7217926150301975,
+        "sharpe_minus_bh": -0.442,
+        "sharpe_minus_bh_ci95": [
+          -0.649,
+          -0.273
+        ]
+      },
+      "MLP": {
+        "cagr": 0.06156783006134625,
+        "sharpe": 0.4434501747245569,
+        "max_drawdown": -0.3534503154459757,
+        "turnover_per_year": 43.074718526100305,
+        "time_in_market": 0.7557147731149778,
+        "final_wealth": 2.0035354651143975,
+        "sharpe_gross": 0.704728835505314,
+        "sharpe_minus_bh": -0.382,
+        "sharpe_minus_bh_ci95": [
+          -0.612,
+          -0.178
+        ]
+      },
+      "CONTROL: shuffled labels": {
+        "cagr": 0.052780924116066164,
+        "sharpe": 0.4033540149903374,
+        "max_drawdown": -0.316091545290496,
+        "turnover_per_year": 55.79938587512794,
+        "time_in_market": 0.8082565677243262,
+        "final_wealth": 1.8189145510538618,
+        "sharpe_gross": 0.7551123847554223,
+        "sharpe_minus_bh": -0.423,
+        "sharpe_minus_bh_ci95": [
+          -0.685,
+          -0.171
+        ]
+      }
+    },
+    "TLT": {
+      "buy & hold": {
+        "cagr": -0.009655979677206217,
+        "sharpe": 0.008258076745748681,
+        "max_drawdown": -0.48351148338776295,
+        "turnover_per_year": 0.08597748208802457,
+        "time_in_market": 1.0,
+        "final_wealth": 0.8932810885736373,
+        "sharpe_gross": 0.008839052265017768
+      },
+      "SMA 50/200 crossover": {
+        "cagr": -0.006121803687649474,
+        "sharpe": -0.0045720042057149565,
+        "max_drawdown": -0.2623655719862069,
+        "turnover_per_year": 2.0634595701125895,
+        "time_in_market": 0.5295121119071989,
+        "final_wealth": 0.9310696017160514,
+        "sharpe_gross": 0.014828104321130162,
+        "sharpe_minus_bh": -0.013,
+        "sharpe_minus_bh_ci95": [
+          -0.441,
+          0.398
+        ]
+      },
+      "12-1 momentum": {
+        "cagr": -0.017173661507639326,
+        "sharpe": -0.11032810738786707,
+        "max_drawdown": -0.3767305029907577,
+        "turnover_per_year": 7.394063459570113,
+        "time_in_market": 0.505970658478335,
+        "final_wealth": 0.8175190134516702,
+        "sharpe_gross": -0.04060330054855488,
+        "sharpe_minus_bh": -0.119,
+        "sharpe_minus_bh_ci95": [
+          -0.551,
+          0.286
+        ]
+      },
+      "logistic regression": {
+        "cagr": -0.042538024215382886,
+        "sharpe": -0.29854622195188346,
+        "max_drawdown": -0.4806301846315505,
+        "turnover_per_year": 49.60900716479017,
+        "time_in_market": 0.7768679631525077,
+        "final_wealth": 0.6031502047927877,
+        "sharpe_gross": 0.11147046360560536,
+        "sharpe_minus_bh": -0.307,
+        "sharpe_minus_bh_ci95": [
+          -0.61,
+          -0.034
+        ]
+      },
+      "gradient boosting": {
+        "cagr": -0.06047310839475806,
+        "sharpe": -0.4478441489913725,
+        "max_drawdown": -0.5829273298478674,
+        "turnover_per_year": 80.21699078812692,
+        "time_in_market": 0.6973729102695326,
+        "final_wealth": 0.48407022717942405,
+        "sharpe_gross": 0.20703874383872925,
+        "sharpe_minus_bh": -0.456,
+        "sharpe_minus_bh_ci95": [
+          -0.735,
+          -0.17
+        ]
+      },
+      "MLP": {
+        "cagr": -0.044073165787434254,
+        "sharpe": -0.3137352868190765,
+        "max_drawdown": -0.49827078754370213,
+        "turnover_per_year": 45.82599795291709,
+        "time_in_market": 0.636301603548277,
+        "final_wealth": 0.5919977711436792,
+        "sharpe_gross": 0.06645919400826293,
+        "sharpe_minus_bh": -0.322,
+        "sharpe_minus_bh_ci95": [
+          -0.673,
+          -0.002
+        ]
+      },
+      "CONTROL: shuffled labels": {
+        "cagr": -0.10151301906112109,
+        "sharpe": -0.8257983916541505,
+        "max_drawdown": -0.7280111403226299,
+        "turnover_per_year": 81.42067553735926,
+        "time_in_market": 0.6571136131013307,
+        "final_wealth": 0.28793723280809225,
+        "sharpe_gross": -0.15168193369571056,
+        "sharpe_minus_bh": -0.834,
+        "sharpe_minus_bh_ci95": [
+          -1.216,
+          -0.497
+        ]
+      }
+    },
+    "XLF": {
+      "buy & hold": {
+        "cagr": 0.11521162606320634,
+        "sharpe": 0.6132409813858924,
+        "max_drawdown": -0.4286253426082637,
+        "turnover_per_year": 0.08597748208802457,
+        "time_in_market": 1.0,
+        "final_wealth": 3.554760657925316,
+        "sharpe_gross": 0.6136639696643864
+      },
+      "SMA 50/200 crossover": {
+        "cagr": 0.04198254935745993,
+        "sharpe": 0.324994122452836,
+        "max_drawdown": -0.4840181121479056,
+        "turnover_per_year": 1.6335721596724666,
+        "time_in_market": 0.7284203343568748,
+        "final_wealth": 1.61337005885856,
+        "sharpe_gross": 0.33442926441419385,
+        "sharpe_minus_bh": -0.288,
+        "sharpe_minus_bh_ci95": [
+          -0.629,
+          0.085
+        ]
+      },
+      "12-1 momentum": {
+        "cagr": 0.02069115357835538,
+        "sharpe": 0.2045555647341416,
+        "max_drawdown": -0.4286253426082631,
+        "turnover_per_year": 6.964176049129989,
+        "time_in_market": 0.714431934493347,
+        "final_wealth": 1.268965367894005,
+        "sharpe_gross": 0.24375806037201628,
+        "sharpe_minus_bh": -0.409,
+        "sharpe_minus_bh_ci95": [
+          -0.709,
+          -0.088
+        ]
+      },
+      "logistic regression": {
+        "cagr": 0.036502534065147696,
+        "sharpe": 0.28398180158255876,
+        "max_drawdown": -0.3471236136514321,
+        "turnover_per_year": 63.53735926305015,
+        "time_in_market": 0.7028317980211531,
+        "final_wealth": 1.5173934712671675,
+        "sharpe_gross": 0.6206948081250319,
+        "sharpe_minus_bh": -0.329,
+        "sharpe_minus_bh_ci95": [
+          -0.748,
+          0.056
+        ]
+      },
+      "gradient boosting": {
+        "cagr": 0.028625394780674718,
+        "sharpe": 0.24275443794187315,
+        "max_drawdown": -0.5241951648390968,
+        "turnover_per_year": 72.39303991811668,
+        "time_in_market": 0.6796315250767656,
+        "final_wealth": 1.3885559960778329,
+        "sharpe_gross": 0.6158797919181211,
+        "sharpe_minus_bh": -0.371,
+        "sharpe_minus_bh_ci95": [
+          -0.675,
+          -0.102
+        ]
+      },
+      "MLP": {
+        "cagr": 0.01896109060716067,
+        "sharpe": 0.19422172798673215,
+        "max_drawdown": -0.4853808930851725,
+        "turnover_per_year": 72.30706243602866,
+        "time_in_market": 0.579324462640737,
+        "final_wealth": 1.244172690871178,
+        "sharpe_gross": 0.5829392922026154,
+        "sharpe_minus_bh": -0.419,
+        "sharpe_minus_bh_ci95": [
+          -0.731,
+          -0.154
+        ]
+      },
+      "CONTROL: shuffled labels": {
+        "cagr": -0.040858471869726354,
+        "sharpe": -0.1395176182423334,
+        "max_drawdown": -0.5964941716172378,
+        "turnover_per_year": 73.510747185261,
+        "time_in_market": 0.6854315933128625,
+        "final_wealth": 0.615571479154967,
+        "sharpe_gross": 0.2675526177565601,
+        "sharpe_minus_bh": -0.753,
+        "sharpe_minus_bh_ci95": [
+          -1.077,
+          -0.42
+        ]
+      }
+    }
+  },
+  "hit_rate": {
+    "AAPL": {
+      "logistic regression": 0.5084,
+      "gradient boosting": 0.5176,
+      "MLP": 0.5172,
+      "always-up base rate": 0.5316,
+      "test_start": "2015-01-02"
+    },
+    "BTC-USD": {
+      "logistic regression": 0.5105,
+      "gradient boosting": 0.513,
+      "MLP": 0.5255,
+      "always-up base rate": 0.5095,
+      "test_start": "2019-01-01"
+    },
+    "ETH-USD": {
+      "logistic regression": 0.5109,
+      "gradient boosting": 0.5138,
+      "MLP": 0.4968,
+      "always-up base rate": 0.5026,
+      "test_start": "2022-01-01"
+    },
+    "GLD": {
+      "logistic regression": 0.5223,
+      "gradient boosting": 0.5189,
+      "MLP": 0.5125,
+      "always-up base rate": 0.5319,
+      "test_start": "2015-01-02"
+    },
+    "IWM": {
+      "logistic regression": 0.5087,
+      "gradient boosting": 0.5009,
+      "MLP": 0.5087,
+      "always-up base rate": 0.5302,
+      "test_start": "2015-01-02"
+    },
+    "JPM": {
+      "logistic regression": 0.5077,
+      "gradient boosting": 0.5046,
+      "MLP": 0.4985,
+      "always-up base rate": 0.5241,
+      "test_start": "2015-01-02"
+    },
+    "QQQ": {
+      "logistic regression": 0.5435,
+      "gradient boosting": 0.5343,
+      "MLP": 0.5326,
+      "always-up base rate": 0.5599,
+      "test_start": "2015-01-02"
+    },
+    "SPY": {
+      "logistic regression": 0.5374,
+      "gradient boosting": 0.5288,
+      "MLP": 0.5111,
+      "always-up base rate": 0.5473,
+      "test_start": "2015-01-02"
+    },
+    "TLT": {
+      "logistic regression": 0.5217,
+      "gradient boosting": 0.5165,
+      "MLP": 0.5032,
+      "always-up base rate": 0.5107,
+      "test_start": "2015-01-02"
+    },
+    "XLF": {
+      "logistic regression": 0.5251,
+      "gradient boosting": 0.5223,
+      "MLP": 0.5251,
+      "always-up base rate": 0.5234,
+      "test_start": "2015-01-02"
+    }
+  },
+  "cost": {
+    "equity": 0.001,
+    "crypto": 0.002
+  }
+}
