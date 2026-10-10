@@ -1,0 +1,2840 @@
+{
+  "costs_bps": [
+    0,
+    2,
+    5,
+    10,
+    15,
+    20,
+    30
+  ],
+  "bands": [
+    0.5,
+    0.52,
+    0.55,
+    0.6
+  ],
+  "n_random": 200,
+  "assets": {
+    "AAPL": {
+      "buy_hold_sharpe": 0.913,
+      "kind": "equity",
+      "strategies": {
+        "SMA 50/200 crossover": {
+          "sharpe_by_cost": {
+            "0": 0.7,
+            "2": 0.699,
+            "5": 0.698,
+            "10": 0.696,
+            "15": 0.693,
+            "20": 0.691,
+            "30": 0.686
+          },
+          "break_even_bps": null
+        },
+        "12-1 momentum": {
+          "sharpe_by_cost": {
+            "0": 0.617,
+            "2": 0.612,
+            "5": 0.606,
+            "10": 0.594,
+            "15": 0.583,
+            "20": 0.572,
+            "30": 0.55
+          },
+          "break_even_bps": null
+        },
+        "logistic regression | band 0.5": {
+          "sharpe_net": 0.568,
+          "turnover_per_year": 54.8,
+          "time_in_market": 0.745,
+          "sharpe_by_cost": {
+            "0": 0.808,
+            "2": 0.76,
+            "5": 0.688,
+            "10": 0.568,
+            "15": 0.448,
+            "20": 0.328,
+            "30": 0.09
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.54,
+          "random_matched_median_sharpe": 0.552,
+          "sharpe_minus_bh_ci95": [
+            -0.701,
+            -0.003
+          ]
+        },
+        "logistic regression | band 0.52": {
+          "sharpe_net": 0.641,
+          "turnover_per_year": 21.1,
+          "time_in_market": 0.78,
+          "sharpe_by_cost": {
+            "0": 0.73,
+            "2": 0.712,
+            "5": 0.685,
+            "10": 0.641,
+            "15": 0.596,
+            "20": 0.551,
+            "30": 0.462
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.22,
+          "random_matched_median_sharpe": 0.719,
+          "sharpe_minus_bh_ci95": [
+            -0.613,
+            0.07
+          ]
+        },
+        "logistic regression | band 0.55": {
+          "sharpe_net": 0.68,
+          "turnover_per_year": 7.5,
+          "time_in_market": 0.842,
+          "sharpe_by_cost": {
+            "0": 0.71,
+            "2": 0.704,
+            "5": 0.695,
+            "10": 0.68,
+            "15": 0.665,
+            "20": 0.65,
+            "30": 0.62
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.11,
+          "random_matched_median_sharpe": 0.803,
+          "sharpe_minus_bh_ci95": [
+            -0.489,
+            0.016
+          ]
+        },
+        "logistic regression | band 0.6": {
+          "sharpe_net": 0.478,
+          "turnover_per_year": 1.2,
+          "time_in_market": 0.683,
+          "sharpe_by_cost": {
+            "0": 0.484,
+            "2": 0.482,
+            "5": 0.481,
+            "10": 0.478,
+            "15": 0.476,
+            "20": 0.473,
+            "30": 0.468
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.06,
+          "random_matched_median_sharpe": 0.769,
+          "sharpe_minus_bh_ci95": [
+            -0.787,
+            -0.102
+          ]
+        },
+        "gradient boosting | band 0.5": {
+          "sharpe_net": 0.826,
+          "turnover_per_year": 70.9,
+          "time_in_market": 0.629,
+          "sharpe_by_cost": {
+            "0": 1.147,
+            "2": 1.083,
+            "5": 0.987,
+            "10": 0.826,
+            "15": 0.665,
+            "20": 0.504,
+            "30": 0.184
+          },
+          "break_even_bps": 5,
+          "random_matched_pctile": 0.985,
+          "random_matched_median_sharpe": 0.408,
+          "sharpe_minus_bh_ci95": [
+            -0.531,
+            0.358
+          ]
+        },
+        "gradient boosting | band 0.52": {
+          "sharpe_net": 1.017,
+          "turnover_per_year": 46.0,
+          "time_in_market": 0.641,
+          "sharpe_by_cost": {
+            "0": 1.225,
+            "2": 1.184,
+            "5": 1.121,
+            "10": 1.017,
+            "15": 0.913,
+            "20": 0.809,
+            "30": 0.601
+          },
+          "break_even_bps": 10,
+          "random_matched_pctile": 1.0,
+          "random_matched_median_sharpe": 0.515,
+          "sharpe_minus_bh_ci95": [
+            -0.319,
+            0.527
+          ]
+        },
+        "gradient boosting | band 0.55": {
+          "sharpe_net": 0.835,
+          "turnover_per_year": 26.6,
+          "time_in_market": 0.659,
+          "sharpe_by_cost": {
+            "0": 0.954,
+            "2": 0.93,
+            "5": 0.894,
+            "10": 0.835,
+            "15": 0.776,
+            "20": 0.717,
+            "30": 0.598
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.835,
+          "random_matched_median_sharpe": 0.642,
+          "sharpe_minus_bh_ci95": [
+            -0.475,
+            0.321
+          ]
+        },
+        "gradient boosting | band 0.6": {
+          "sharpe_net": 0.831,
+          "turnover_per_year": 10.9,
+          "time_in_market": 0.678,
+          "sharpe_by_cost": {
+            "0": 0.879,
+            "2": 0.869,
+            "5": 0.855,
+            "10": 0.831,
+            "15": 0.806,
+            "20": 0.782,
+            "30": 0.734
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.75,
+          "random_matched_median_sharpe": 0.715,
+          "sharpe_minus_bh_ci95": [
+            -0.523,
+            0.355
+          ]
+        },
+        "MLP | band 0.5": {
+          "sharpe_net": 0.827,
+          "turnover_per_year": 57.9,
+          "time_in_market": 0.613,
+          "sharpe_by_cost": {
+            "0": 1.078,
+            "2": 1.028,
+            "5": 0.953,
+            "10": 0.827,
+            "15": 0.702,
+            "20": 0.576,
+            "30": 0.326
+          },
+          "break_even_bps": 5,
+          "random_matched_pctile": 0.975,
+          "random_matched_median_sharpe": 0.446,
+          "sharpe_minus_bh_ci95": [
+            -0.434,
+            0.247
+          ]
+        },
+        "MLP | band 0.52": {
+          "sharpe_net": 0.849,
+          "turnover_per_year": 35.3,
+          "time_in_market": 0.613,
+          "sharpe_by_cost": {
+            "0": 1.003,
+            "2": 0.972,
+            "5": 0.926,
+            "10": 0.849,
+            "15": 0.772,
+            "20": 0.695,
+            "30": 0.541
+          },
+          "break_even_bps": 5,
+          "random_matched_pctile": 0.935,
+          "random_matched_median_sharpe": 0.568,
+          "sharpe_minus_bh_ci95": [
+            -0.471,
+            0.297
+          ]
+        },
+        "MLP | band 0.55": {
+          "sharpe_net": 1.031,
+          "turnover_per_year": 14.6,
+          "time_in_market": 0.656,
+          "sharpe_by_cost": {
+            "0": 1.095,
+            "2": 1.082,
+            "5": 1.063,
+            "10": 1.031,
+            "15": 0.999,
+            "20": 0.967,
+            "30": 0.903
+          },
+          "break_even_bps": 20,
+          "random_matched_pctile": 0.985,
+          "random_matched_median_sharpe": 0.647,
+          "sharpe_minus_bh_ci95": [
+            -0.256,
+            0.479
+          ]
+        },
+        "MLP | band 0.6": {
+          "sharpe_net": 1.144,
+          "turnover_per_year": 5.1,
+          "time_in_market": 0.769,
+          "sharpe_by_cost": {
+            "0": 1.165,
+            "2": 1.161,
+            "5": 1.155,
+            "10": 1.144,
+            "15": 1.134,
+            "20": 1.124,
+            "30": 1.103
+          },
+          "break_even_bps": 30,
+          "random_matched_pctile": 0.995,
+          "random_matched_median_sharpe": 0.763,
+          "sharpe_minus_bh_ci95": [
+            -0.057,
+            0.522
+          ]
+        }
+      }
+    },
+    "BTC-USD": {
+      "buy_hold_sharpe": 0.954,
+      "kind": "crypto",
+      "strategies": {
+        "SMA 50/200 crossover": {
+          "sharpe_by_cost": {
+            "0": 0.795,
+            "2": 0.795,
+            "5": 0.793,
+            "10": 0.791,
+            "15": 0.789,
+            "20": 0.787,
+            "30": 0.782
+          },
+          "break_even_bps": null
+        },
+        "12-1 momentum": {
+          "sharpe_by_cost": {
+            "0": 1.051,
+            "2": 1.048,
+            "5": 1.043,
+            "10": 1.035,
+            "15": 1.028,
+            "20": 1.02,
+            "30": 1.004
+          },
+          "break_even_bps": 30
+        },
+        "logistic regression | band 0.5": {
+          "sharpe_net": 0.807,
+          "turnover_per_year": 56.7,
+          "time_in_market": 0.846,
+          "sharpe_by_cost": {
+            "0": 1.014,
+            "2": 0.993,
+            "5": 0.962,
+            "10": 0.91,
+            "15": 0.859,
+            "20": 0.807,
+            "30": 0.704
+          },
+          "break_even_bps": 5,
+          "random_matched_pctile": 0.83,
+          "random_matched_median_sharpe": 0.669,
+          "sharpe_minus_bh_ci95": [
+            -0.447,
+            0.137
+          ]
+        },
+        "logistic regression | band 0.52": {
+          "sharpe_net": 0.838,
+          "turnover_per_year": 25.7,
+          "time_in_market": 0.875,
+          "sharpe_by_cost": {
+            "0": 0.93,
+            "2": 0.921,
+            "5": 0.907,
+            "10": 0.884,
+            "15": 0.861,
+            "20": 0.838,
+            "30": 0.792
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.625,
+          "random_matched_median_sharpe": 0.795,
+          "sharpe_minus_bh_ci95": [
+            -0.374,
+            0.159
+          ]
+        },
+        "logistic regression | band 0.55": {
+          "sharpe_net": 0.778,
+          "turnover_per_year": 7.7,
+          "time_in_market": 0.872,
+          "sharpe_by_cost": {
+            "0": 0.805,
+            "2": 0.802,
+            "5": 0.798,
+            "10": 0.791,
+            "15": 0.785,
+            "20": 0.778,
+            "30": 0.764
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.28,
+          "random_matched_median_sharpe": 0.864,
+          "sharpe_minus_bh_ci95": [
+            -0.443,
+            0.077
+          ]
+        },
+        "logistic regression | band 0.6": {
+          "sharpe_net": 0.733,
+          "turnover_per_year": 1.4,
+          "time_in_market": 0.899,
+          "sharpe_by_cost": {
+            "0": 0.738,
+            "2": 0.737,
+            "5": 0.736,
+            "10": 0.735,
+            "15": 0.734,
+            "20": 0.733,
+            "30": 0.73
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.09,
+          "random_matched_median_sharpe": 0.903,
+          "sharpe_minus_bh_ci95": [
+            -0.452,
+            -0.006
+          ]
+        },
+        "gradient boosting | band 0.5": {
+          "sharpe_net": 0.838,
+          "turnover_per_year": 97.2,
+          "time_in_market": 0.691,
+          "sharpe_by_cost": {
+            "0": 1.223,
+            "2": 1.185,
+            "5": 1.127,
+            "10": 1.031,
+            "15": 0.934,
+            "20": 0.838,
+            "30": 0.645
+          },
+          "break_even_bps": 10,
+          "random_matched_pctile": 0.97,
+          "random_matched_median_sharpe": 0.407,
+          "sharpe_minus_bh_ci95": [
+            -0.56,
+            0.327
+          ]
+        },
+        "gradient boosting | band 0.52": {
+          "sharpe_net": 0.924,
+          "turnover_per_year": 60.1,
+          "time_in_market": 0.722,
+          "sharpe_by_cost": {
+            "0": 1.16,
+            "2": 1.137,
+            "5": 1.101,
+            "10": 1.042,
+            "15": 0.983,
+            "20": 0.924,
+            "30": 0.806
+          },
+          "break_even_bps": 15,
+          "random_matched_pctile": 0.955,
+          "random_matched_median_sharpe": 0.561,
+          "sharpe_minus_bh_ci95": [
+            -0.468,
+            0.409
+          ]
+        },
+        "gradient boosting | band 0.55": {
+          "sharpe_net": 0.836,
+          "turnover_per_year": 26.0,
+          "time_in_market": 0.76,
+          "sharpe_by_cost": {
+            "0": 0.937,
+            "2": 0.927,
+            "5": 0.912,
+            "10": 0.887,
+            "15": 0.861,
+            "20": 0.836,
+            "30": 0.786
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.705,
+          "random_matched_median_sharpe": 0.74,
+          "sharpe_minus_bh_ci95": [
+            -0.525,
+            0.305
+          ]
+        },
+        "gradient boosting | band 0.6": {
+          "sharpe_net": 1.026,
+          "turnover_per_year": 5.6,
+          "time_in_market": 0.855,
+          "sharpe_by_cost": {
+            "0": 1.047,
+            "2": 1.045,
+            "5": 1.041,
+            "10": 1.036,
+            "15": 1.031,
+            "20": 1.026,
+            "30": 1.016
+          },
+          "break_even_bps": 30,
+          "random_matched_pctile": 0.925,
+          "random_matched_median_sharpe": 0.85,
+          "sharpe_minus_bh_ci95": [
+            -0.3,
+            0.463
+          ]
+        },
+        "MLP | band 0.5": {
+          "sharpe_net": 0.932,
+          "turnover_per_year": 78.1,
+          "time_in_market": 0.711,
+          "sharpe_by_cost": {
+            "0": 1.238,
+            "2": 1.208,
+            "5": 1.162,
+            "10": 1.085,
+            "15": 1.008,
+            "20": 0.932,
+            "30": 0.778
+          },
+          "break_even_bps": 15,
+          "random_matched_pctile": 0.995,
+          "random_matched_median_sharpe": 0.495,
+          "sharpe_minus_bh_ci95": [
+            -0.443,
+            0.361
+          ]
+        },
+        "MLP | band 0.52": {
+          "sharpe_net": 1.044,
+          "turnover_per_year": 46.6,
+          "time_in_market": 0.731,
+          "sharpe_by_cost": {
+            "0": 1.225,
+            "2": 1.207,
+            "5": 1.18,
+            "10": 1.135,
+            "15": 1.089,
+            "20": 1.044,
+            "30": 0.954
+          },
+          "break_even_bps": 20,
+          "random_matched_pctile": 0.985,
+          "random_matched_median_sharpe": 0.61,
+          "sharpe_minus_bh_ci95": [
+            -0.319,
+            0.497
+          ]
+        },
+        "MLP | band 0.55": {
+          "sharpe_net": 1.103,
+          "turnover_per_year": 21.3,
+          "time_in_market": 0.779,
+          "sharpe_by_cost": {
+            "0": 1.181,
+            "2": 1.173,
+            "5": 1.161,
+            "10": 1.142,
+            "15": 1.122,
+            "20": 1.103,
+            "30": 1.064
+          },
+          "break_even_bps": 30,
+          "random_matched_pctile": 0.975,
+          "random_matched_median_sharpe": 0.753,
+          "sharpe_minus_bh_ci95": [
+            -0.188,
+            0.455
+          ]
+        },
+        "MLP | band 0.6": {
+          "sharpe_net": 1.02,
+          "turnover_per_year": 4.6,
+          "time_in_market": 0.889,
+          "sharpe_by_cost": {
+            "0": 1.036,
+            "2": 1.034,
+            "5": 1.032,
+            "10": 1.028,
+            "15": 1.024,
+            "20": 1.02,
+            "30": 1.012
+          },
+          "break_even_bps": 30,
+          "random_matched_pctile": 0.85,
+          "random_matched_median_sharpe": 0.899,
+          "sharpe_minus_bh_ci95": [
+            -0.191,
+            0.347
+          ]
+        }
+      }
+    },
+    "ETH-USD": {
+      "buy_hold_sharpe": 0.212,
+      "kind": "crypto",
+      "strategies": {
+        "SMA 50/200 crossover": {
+          "sharpe_by_cost": {
+            "0": 0.026,
+            "2": 0.025,
+            "5": 0.023,
+            "10": 0.021,
+            "15": 0.018,
+            "20": 0.016,
+            "30": 0.01
+          },
+          "break_even_bps": null
+        },
+        "12-1 momentum": {
+          "sharpe_by_cost": {
+            "0": -0.017,
+            "2": -0.023,
+            "5": -0.032,
+            "10": -0.047,
+            "15": -0.063,
+            "20": -0.078,
+            "30": -0.109
+          },
+          "break_even_bps": null
+        },
+        "logistic regression | band 0.5": {
+          "sharpe_net": -0.283,
+          "turnover_per_year": 151.1,
+          "time_in_market": 0.501,
+          "sharpe_by_cost": {
+            "0": 0.288,
+            "2": 0.231,
+            "5": 0.145,
+            "10": 0.002,
+            "15": -0.14,
+            "20": -0.283,
+            "30": -0.568
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.7,
+          "random_matched_median_sharpe": -0.457,
+          "sharpe_minus_bh_ci95": [
+            -1.105,
+            0.107
+          ]
+        },
+        "logistic regression | band 0.52": {
+          "sharpe_net": 0.084,
+          "turnover_per_year": 79.5,
+          "time_in_market": 0.5,
+          "sharpe_by_cost": {
+            "0": 0.385,
+            "2": 0.355,
+            "5": 0.31,
+            "10": 0.234,
+            "15": 0.159,
+            "20": 0.084,
+            "30": -0.067
+          },
+          "break_even_bps": 10,
+          "random_matched_pctile": 0.745,
+          "random_matched_median_sharpe": -0.13,
+          "sharpe_minus_bh_ci95": [
+            -0.763,
+            0.491
+          ]
+        },
+        "logistic regression | band 0.55": {
+          "sharpe_net": -0.17,
+          "turnover_per_year": 19.5,
+          "time_in_market": 0.471,
+          "sharpe_by_cost": {
+            "0": -0.095,
+            "2": -0.102,
+            "5": -0.114,
+            "10": -0.132,
+            "15": -0.151,
+            "20": -0.17,
+            "30": -0.208
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.285,
+          "random_matched_median_sharpe": 0.017,
+          "sharpe_minus_bh_ci95": [
+            -1.023,
+            0.206
+          ]
+        },
+        "logistic regression | band 0.6": {
+          "sharpe_net": -0.256,
+          "turnover_per_year": 4.3,
+          "time_in_market": 0.253,
+          "sharpe_by_cost": {
+            "0": -0.236,
+            "2": -0.238,
+            "5": -0.241,
+            "10": -0.246,
+            "15": -0.251,
+            "20": -0.256,
+            "30": -0.265
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.16,
+          "random_matched_median_sharpe": 0.093,
+          "sharpe_minus_bh_ci95": [
+            -1.235,
+            0.297
+          ]
+        },
+        "gradient boosting | band 0.5": {
+          "sharpe_net": -0.506,
+          "turnover_per_year": 129.7,
+          "time_in_market": 0.404,
+          "sharpe_by_cost": {
+            "0": 0.044,
+            "2": -0.011,
+            "5": -0.094,
+            "10": -0.232,
+            "15": -0.369,
+            "20": -0.506,
+            "30": -0.78
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.495,
+          "random_matched_median_sharpe": -0.506,
+          "sharpe_minus_bh_ci95": [
+            -1.48,
+            0.013
+          ]
+        },
+        "gradient boosting | band 0.52": {
+          "sharpe_net": -0.098,
+          "turnover_per_year": 97.1,
+          "time_in_market": 0.416,
+          "sharpe_by_cost": {
+            "0": 0.309,
+            "2": 0.268,
+            "5": 0.207,
+            "10": 0.105,
+            "15": 0.004,
+            "20": -0.098,
+            "30": -0.301
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.665,
+          "random_matched_median_sharpe": -0.274,
+          "sharpe_minus_bh_ci95": [
+            -1.127,
+            0.499
+          ]
+        },
+        "gradient boosting | band 0.55": {
+          "sharpe_net": -0.011,
+          "turnover_per_year": 54.2,
+          "time_in_market": 0.444,
+          "sharpe_by_cost": {
+            "0": 0.211,
+            "2": 0.189,
+            "5": 0.155,
+            "10": 0.1,
+            "15": 0.044,
+            "20": -0.011,
+            "30": -0.122
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.63,
+          "random_matched_median_sharpe": -0.138,
+          "sharpe_minus_bh_ci95": [
+            -1.07,
+            0.589
+          ]
+        },
+        "gradient boosting | band 0.6": {
+          "sharpe_net": -0.135,
+          "turnover_per_year": 21.2,
+          "time_in_market": 0.437,
+          "sharpe_by_cost": {
+            "0": -0.047,
+            "2": -0.055,
+            "5": -0.069,
+            "10": -0.091,
+            "15": -0.113,
+            "20": -0.135,
+            "30": -0.18
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.295,
+          "random_matched_median_sharpe": 0.031,
+          "sharpe_minus_bh_ci95": [
+            -1.128,
+            0.481
+          ]
+        },
+        "MLP | band 0.5": {
+          "sharpe_net": -0.129,
+          "turnover_per_year": 78.7,
+          "time_in_market": 0.304,
+          "sharpe_by_cost": {
+            "0": 0.211,
+            "2": 0.177,
+            "5": 0.126,
+            "10": 0.041,
+            "15": -0.044,
+            "20": -0.129,
+            "30": -0.298
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.655,
+          "random_matched_median_sharpe": -0.289,
+          "sharpe_minus_bh_ci95": [
+            -1.082,
+            0.382
+          ]
+        },
+        "MLP | band 0.52": {
+          "sharpe_net": 0.067,
+          "turnover_per_year": 49.5,
+          "time_in_market": 0.289,
+          "sharpe_by_cost": {
+            "0": 0.292,
+            "2": 0.269,
+            "5": 0.236,
+            "10": 0.18,
+            "15": 0.123,
+            "20": 0.067,
+            "30": -0.045
+          },
+          "break_even_bps": 5,
+          "random_matched_pctile": 0.695,
+          "random_matched_median_sharpe": -0.174,
+          "sharpe_minus_bh_ci95": [
+            -0.883,
+            0.627
+          ]
+        },
+        "MLP | band 0.55": {
+          "sharpe_net": 0.122,
+          "turnover_per_year": 23.4,
+          "time_in_market": 0.245,
+          "sharpe_by_cost": {
+            "0": 0.23,
+            "2": 0.219,
+            "5": 0.203,
+            "10": 0.176,
+            "15": 0.149,
+            "20": 0.122,
+            "30": 0.068
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.54,
+          "random_matched_median_sharpe": 0.066,
+          "sharpe_minus_bh_ci95": [
+            -0.783,
+            0.59
+          ]
+        },
+        "MLP | band 0.6": {
+          "sharpe_net": 0.339,
+          "turnover_per_year": 6.0,
+          "time_in_market": 0.349,
+          "sharpe_by_cost": {
+            "0": 0.365,
+            "2": 0.362,
+            "5": 0.358,
+            "10": 0.352,
+            "15": 0.345,
+            "20": 0.339,
+            "30": 0.326
+          },
+          "break_even_bps": 30,
+          "random_matched_pctile": 0.725,
+          "random_matched_median_sharpe": 0.069,
+          "sharpe_minus_bh_ci95": [
+            -0.67,
+            0.943
+          ]
+        }
+      }
+    },
+    "GLD": {
+      "buy_hold_sharpe": 0.758,
+      "kind": "equity",
+      "strategies": {
+        "SMA 50/200 crossover": {
+          "sharpe_by_cost": {
+            "0": 0.588,
+            "2": 0.586,
+            "5": 0.583,
+            "10": 0.578,
+            "15": 0.573,
+            "20": 0.568,
+            "30": 0.558
+          },
+          "break_even_bps": null
+        },
+        "12-1 momentum": {
+          "sharpe_by_cost": {
+            "0": 0.611,
+            "2": 0.604,
+            "5": 0.594,
+            "10": 0.578,
+            "15": 0.561,
+            "20": 0.545,
+            "30": 0.511
+          },
+          "break_even_bps": null
+        },
+        "logistic regression | band 0.5": {
+          "sharpe_net": 0.424,
+          "turnover_per_year": 71.8,
+          "time_in_market": 0.681,
+          "sharpe_by_cost": {
+            "0": 0.961,
+            "2": 0.853,
+            "5": 0.692,
+            "10": 0.424,
+            "15": 0.156,
+            "20": -0.11,
+            "30": -0.637
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.985,
+          "random_matched_median_sharpe": 0.112,
+          "sharpe_minus_bh_ci95": [
+            -0.674,
+            0.037
+          ]
+        },
+        "logistic regression | band 0.52": {
+          "sharpe_net": 0.709,
+          "turnover_per_year": 25.7,
+          "time_in_market": 0.714,
+          "sharpe_by_cost": {
+            "0": 0.898,
+            "2": 0.86,
+            "5": 0.804,
+            "10": 0.709,
+            "15": 0.615,
+            "20": 0.52,
+            "30": 0.331
+          },
+          "break_even_bps": 5,
+          "random_matched_pctile": 0.935,
+          "random_matched_median_sharpe": 0.457,
+          "sharpe_minus_bh_ci95": [
+            -0.415,
+            0.322
+          ]
+        },
+        "logistic regression | band 0.55": {
+          "sharpe_net": 0.897,
+          "turnover_per_year": 6.0,
+          "time_in_market": 0.757,
+          "sharpe_by_cost": {
+            "0": 0.94,
+            "2": 0.931,
+            "5": 0.918,
+            "10": 0.897,
+            "15": 0.875,
+            "20": 0.853,
+            "30": 0.809
+          },
+          "break_even_bps": 30,
+          "random_matched_pctile": 0.995,
+          "random_matched_median_sharpe": 0.651,
+          "sharpe_minus_bh_ci95": [
+            -0.211,
+            0.483
+          ]
+        },
+        "logistic regression | band 0.6": {
+          "sharpe_net": 0.701,
+          "turnover_per_year": 1.3,
+          "time_in_market": 0.579,
+          "sharpe_by_cost": {
+            "0": 0.71,
+            "2": 0.709,
+            "5": 0.706,
+            "10": 0.701,
+            "15": 0.696,
+            "20": 0.692,
+            "30": 0.683
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.74,
+          "random_matched_median_sharpe": 0.582,
+          "sharpe_minus_bh_ci95": [
+            -0.348,
+            0.24
+          ]
+        },
+        "gradient boosting | band 0.5": {
+          "sharpe_net": 0.297,
+          "turnover_per_year": 75.4,
+          "time_in_market": 0.567,
+          "sharpe_by_cost": {
+            "0": 0.912,
+            "2": 0.789,
+            "5": 0.605,
+            "10": 0.297,
+            "15": -0.01,
+            "20": -0.315,
+            "30": -0.917
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.955,
+          "random_matched_median_sharpe": -0.047,
+          "sharpe_minus_bh_ci95": [
+            -0.838,
+            -0.094
+          ]
+        },
+        "gradient boosting | band 0.52": {
+          "sharpe_net": 0.473,
+          "turnover_per_year": 49.8,
+          "time_in_market": 0.556,
+          "sharpe_by_cost": {
+            "0": 0.884,
+            "2": 0.802,
+            "5": 0.679,
+            "10": 0.473,
+            "15": 0.268,
+            "20": 0.064,
+            "30": -0.341
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.97,
+          "random_matched_median_sharpe": 0.149,
+          "sharpe_minus_bh_ci95": [
+            -0.655,
+            0.089
+          ]
+        },
+        "gradient boosting | band 0.55": {
+          "sharpe_net": 0.726,
+          "turnover_per_year": 24.8,
+          "time_in_market": 0.569,
+          "sharpe_by_cost": {
+            "0": 0.931,
+            "2": 0.89,
+            "5": 0.829,
+            "10": 0.726,
+            "15": 0.623,
+            "20": 0.521,
+            "30": 0.316
+          },
+          "break_even_bps": 5,
+          "random_matched_pctile": 0.985,
+          "random_matched_median_sharpe": 0.375,
+          "sharpe_minus_bh_ci95": [
+            -0.37,
+            0.339
+          ]
+        },
+        "gradient boosting | band 0.6": {
+          "sharpe_net": 0.657,
+          "turnover_per_year": 6.9,
+          "time_in_market": 0.63,
+          "sharpe_by_cost": {
+            "0": 0.712,
+            "2": 0.701,
+            "5": 0.685,
+            "10": 0.657,
+            "15": 0.63,
+            "20": 0.602,
+            "30": 0.546
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.73,
+          "random_matched_median_sharpe": 0.558,
+          "sharpe_minus_bh_ci95": [
+            -0.425,
+            0.246
+          ]
+        },
+        "MLP | band 0.5": {
+          "sharpe_net": 0.328,
+          "turnover_per_year": 54.6,
+          "time_in_market": 0.48,
+          "sharpe_by_cost": {
+            "0": 0.78,
+            "2": 0.689,
+            "5": 0.554,
+            "10": 0.328,
+            "15": 0.102,
+            "20": -0.123,
+            "30": -0.567
+          },
+          "break_even_bps": 0,
+          "random_matched_pctile": 0.945,
+          "random_matched_median_sharpe": -0.009,
+          "sharpe_minus_bh_ci95": [
+            -0.838,
+            -0.048
+          ]
+        },
+        "MLP | band 0.52": {
+          "sharpe_net": 0.579,
+          "turnover_per_year": 27.1,
+          "time_in_market": 0.46,
+          "sharpe_by_cost": {
+            "0": 0.806,
+            "2": 0.761,
+            "5": 0.692,
+            "10": 0.579,
+            "15": 0.465,
+            "20": 0.351,
+            "30": 0.124
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.935,
+          "random_matched_median_sharpe": 0.294,
+          "sharpe_minus_bh_ci95": [
+            -0.585,
+            0.205
+          ]
+        },
+        "MLP | band 0.55": {
+          "sharpe_net": 0.706,
+          "turnover_per_year": 10.7,
+          "time_in_market": 0.456,
+          "sharpe_by_cost": {
+            "0": 0.795,
+            "2": 0.777,
+            "5": 0.751,
+            "10": 0.706,
+            "15": 0.66,
+            "20": 0.615,
+            "30": 0.525
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.91,
+          "random_matched_median_sharpe": 0.427,
+          "sharpe_minus_bh_ci95": [
+            -0.471,
+            0.343
+          ]
+        },
+        "MLP | band 0.6": {
+          "sharpe_net": 0.855,
+          "turnover_per_year": 3.0,
+          "time_in_market": 0.557,
+          "sharpe_by_cost": {
+            "0": 0.878,
+            "2": 0.873,
+            "5": 0.866,
+            "10": 0.855,
+            "15": 0.843,
+            "20": 0.831,
+            "30": 0.808
+          },
+          "break_even_bps": 30,
+          "random_matched_pctile": 0.91,
+          "random_matched_median_sharpe": 0.543,
+          "sharpe_minus_bh_ci95": [
+            -0.265,
+            0.458
+          ]
+        }
+      }
+    },
+    "IWM": {
+      "buy_hold_sharpe": 0.517,
+      "kind": "equity",
+      "strategies": {
+        "SMA 50/200 crossover": {
+          "sharpe_by_cost": {
+            "0": 0.23,
+            "2": 0.228,
+            "5": 0.225,
+            "10": 0.221,
+            "15": 0.217,
+            "20": 0.212,
+            "30": 0.204
+          },
+          "break_even_bps": null
+        },
+        "12-1 momentum": {
+          "sharpe_by_cost": {
+            "0": 0.15,
+            "2": 0.141,
+            "5": 0.127,
+            "10": 0.104,
+            "15": 0.081,
+            "20": 0.058,
+            "30": 0.012
+          },
+          "break_even_bps": null
+        },
+        "logistic regression | band 0.5": {
+          "sharpe_net": 0.328,
+          "turnover_per_year": 16.8,
+          "time_in_market": 0.918,
+          "sharpe_by_cost": {
+            "0": 0.407,
+            "2": 0.391,
+            "5": 0.367,
+            "10": 0.328,
+            "15": 0.289,
+            "20": 0.249,
+            "30": 0.171
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.155,
+          "random_matched_median_sharpe": 0.405,
+          "sharpe_minus_bh_ci95": [
+            -0.391,
+            0.023
+          ]
+        },
+        "logistic regression | band 0.52": {
+          "sharpe_net": 0.495,
+          "turnover_per_year": 3.9,
+          "time_in_market": 0.929,
+          "sharpe_by_cost": {
+            "0": 0.513,
+            "2": 0.509,
+            "5": 0.504,
+            "10": 0.495,
+            "15": 0.486,
+            "20": 0.477,
+            "30": 0.459
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.6,
+          "random_matched_median_sharpe": 0.48,
+          "sharpe_minus_bh_ci95": [
+            -0.203,
+            0.163
+          ]
+        },
+        "logistic regression | band 0.55": {
+          "sharpe_net": 0.498,
+          "turnover_per_year": 1.6,
+          "time_in_market": 0.939,
+          "sharpe_by_cost": {
+            "0": 0.505,
+            "2": 0.504,
+            "5": 0.501,
+            "10": 0.498,
+            "15": 0.494,
+            "20": 0.49,
+            "30": 0.482
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.515,
+          "random_matched_median_sharpe": 0.494,
+          "sharpe_minus_bh_ci95": [
+            -0.179,
+            0.168
+          ]
+        },
+        "logistic regression | band 0.6": {
+          "sharpe_net": 0.464,
+          "turnover_per_year": 0.3,
+          "time_in_market": 0.952,
+          "sharpe_by_cost": {
+            "0": 0.465,
+            "2": 0.465,
+            "5": 0.464,
+            "10": 0.464,
+            "15": 0.463,
+            "20": 0.463,
+            "30": 0.462
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.145,
+          "random_matched_median_sharpe": 0.517,
+          "sharpe_minus_bh_ci95": [
+            -0.141,
+            0.012
+          ]
+        },
+        "gradient boosting | band 0.5": {
+          "sharpe_net": 0.027,
+          "turnover_per_year": 65.1,
+          "time_in_market": 0.745,
+          "sharpe_by_cost": {
+            "0": 0.36,
+            "2": 0.293,
+            "5": 0.193,
+            "10": 0.027,
+            "15": -0.139,
+            "20": -0.305,
+            "30": -0.634
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.28,
+          "random_matched_median_sharpe": 0.114,
+          "sharpe_minus_bh_ci95": [
+            -0.816,
+            -0.169
+          ]
+        },
+        "gradient boosting | band 0.52": {
+          "sharpe_net": 0.231,
+          "turnover_per_year": 42.4,
+          "time_in_market": 0.765,
+          "sharpe_by_cost": {
+            "0": 0.456,
+            "2": 0.411,
+            "5": 0.343,
+            "10": 0.231,
+            "15": 0.118,
+            "20": 0.006,
+            "30": -0.218
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.49,
+          "random_matched_median_sharpe": 0.239,
+          "sharpe_minus_bh_ci95": [
+            -0.638,
+            0.073
+          ]
+        },
+        "gradient boosting | band 0.55": {
+          "sharpe_net": 0.219,
+          "turnover_per_year": 19.2,
+          "time_in_market": 0.799,
+          "sharpe_by_cost": {
+            "0": 0.313,
+            "2": 0.294,
+            "5": 0.266,
+            "10": 0.219,
+            "15": 0.172,
+            "20": 0.125,
+            "30": 0.031
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.13,
+          "random_matched_median_sharpe": 0.334,
+          "sharpe_minus_bh_ci95": [
+            -0.543,
+            -0.063
+          ]
+        },
+        "gradient boosting | band 0.6": {
+          "sharpe_net": 0.305,
+          "turnover_per_year": 6.6,
+          "time_in_market": 0.828,
+          "sharpe_by_cost": {
+            "0": 0.337,
+            "2": 0.331,
+            "5": 0.321,
+            "10": 0.305,
+            "15": 0.29,
+            "20": 0.274,
+            "30": 0.243
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.145,
+          "random_matched_median_sharpe": 0.426,
+          "sharpe_minus_bh_ci95": [
+            -0.412,
+            -0.039
+          ]
+        },
+        "MLP | band 0.5": {
+          "sharpe_net": 0.212,
+          "turnover_per_year": 54.4,
+          "time_in_market": 0.704,
+          "sharpe_by_cost": {
+            "0": 0.483,
+            "2": 0.428,
+            "5": 0.347,
+            "10": 0.212,
+            "15": 0.077,
+            "20": -0.058,
+            "30": -0.327
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.65,
+          "random_matched_median_sharpe": 0.127,
+          "sharpe_minus_bh_ci95": [
+            -0.561,
+            -0.07
+          ]
+        },
+        "MLP | band 0.52": {
+          "sharpe_net": 0.415,
+          "turnover_per_year": 25.2,
+          "time_in_market": 0.734,
+          "sharpe_by_cost": {
+            "0": 0.539,
+            "2": 0.514,
+            "5": 0.477,
+            "10": 0.415,
+            "15": 0.354,
+            "20": 0.292,
+            "30": 0.169
+          },
+          "break_even_bps": 0,
+          "random_matched_pctile": 0.725,
+          "random_matched_median_sharpe": 0.305,
+          "sharpe_minus_bh_ci95": [
+            -0.344,
+            0.13
+          ]
+        },
+        "MLP | band 0.55": {
+          "sharpe_net": 0.542,
+          "turnover_per_year": 7.5,
+          "time_in_market": 0.814,
+          "sharpe_by_cost": {
+            "0": 0.578,
+            "2": 0.571,
+            "5": 0.56,
+            "10": 0.542,
+            "15": 0.524,
+            "20": 0.506,
+            "30": 0.471
+          },
+          "break_even_bps": 15,
+          "random_matched_pctile": 0.795,
+          "random_matched_median_sharpe": 0.41,
+          "sharpe_minus_bh_ci95": [
+            -0.198,
+            0.258
+          ]
+        },
+        "MLP | band 0.6": {
+          "sharpe_net": 0.505,
+          "turnover_per_year": 0.6,
+          "time_in_market": 0.864,
+          "sharpe_by_cost": {
+            "0": 0.508,
+            "2": 0.507,
+            "5": 0.506,
+            "10": 0.505,
+            "15": 0.503,
+            "20": 0.502,
+            "30": 0.499
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.58,
+          "random_matched_median_sharpe": 0.493,
+          "sharpe_minus_bh_ci95": [
+            -0.173,
+            0.146
+          ]
+        }
+      }
+    },
+    "JPM": {
+      "buy_hold_sharpe": 0.787,
+      "kind": "equity",
+      "strategies": {
+        "SMA 50/200 crossover": {
+          "sharpe_by_cost": {
+            "0": 0.674,
+            "2": 0.673,
+            "5": 0.672,
+            "10": 0.669,
+            "15": 0.666,
+            "20": 0.664,
+            "30": 0.659
+          },
+          "break_even_bps": null
+        },
+        "12-1 momentum": {
+          "sharpe_by_cost": {
+            "0": 0.669,
+            "2": 0.664,
+            "5": 0.657,
+            "10": 0.645,
+            "15": 0.634,
+            "20": 0.622,
+            "30": 0.598
+          },
+          "break_even_bps": null
+        },
+        "logistic regression | band 0.5": {
+          "sharpe_net": 0.409,
+          "turnover_per_year": 58.9,
+          "time_in_market": 0.683,
+          "sharpe_by_cost": {
+            "0": 0.668,
+            "2": 0.617,
+            "5": 0.539,
+            "10": 0.409,
+            "15": 0.28,
+            "20": 0.15,
+            "30": -0.107
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.545,
+          "random_matched_median_sharpe": 0.393,
+          "sharpe_minus_bh_ci95": [
+            -0.778,
+            -0.005
+          ]
+        },
+        "logistic regression | band 0.52": {
+          "sharpe_net": 0.721,
+          "turnover_per_year": 19.9,
+          "time_in_market": 0.72,
+          "sharpe_by_cost": {
+            "0": 0.807,
+            "2": 0.79,
+            "5": 0.764,
+            "10": 0.721,
+            "15": 0.679,
+            "20": 0.635,
+            "30": 0.549
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.835,
+          "random_matched_median_sharpe": 0.573,
+          "sharpe_minus_bh_ci95": [
+            -0.393,
+            0.21
+          ]
+        },
+        "logistic regression | band 0.55": {
+          "sharpe_net": 0.829,
+          "turnover_per_year": 5.2,
+          "time_in_market": 0.757,
+          "sharpe_by_cost": {
+            "0": 0.851,
+            "2": 0.846,
+            "5": 0.84,
+            "10": 0.829,
+            "15": 0.818,
+            "20": 0.807,
+            "30": 0.785
+          },
+          "break_even_bps": 20,
+          "random_matched_pctile": 0.875,
+          "random_matched_median_sharpe": 0.657,
+          "sharpe_minus_bh_ci95": [
+            -0.243,
+            0.272
+          ]
+        },
+        "logistic regression | band 0.6": {
+          "sharpe_net": 0.909,
+          "turnover_per_year": 1.1,
+          "time_in_market": 0.61,
+          "sharpe_by_cost": {
+            "0": 0.914,
+            "2": 0.913,
+            "5": 0.911,
+            "10": 0.909,
+            "15": 0.906,
+            "20": 0.904,
+            "30": 0.899
+          },
+          "break_even_bps": 30,
+          "random_matched_pctile": 0.905,
+          "random_matched_median_sharpe": 0.638,
+          "sharpe_minus_bh_ci95": [
+            -0.186,
+            0.453
+          ]
+        },
+        "gradient boosting | band 0.5": {
+          "sharpe_net": 0.234,
+          "turnover_per_year": 77.3,
+          "time_in_market": 0.621,
+          "sharpe_by_cost": {
+            "0": 0.583,
+            "2": 0.513,
+            "5": 0.408,
+            "10": 0.234,
+            "15": 0.059,
+            "20": -0.115,
+            "30": -0.462
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.435,
+          "random_matched_median_sharpe": 0.265,
+          "sharpe_minus_bh_ci95": [
+            -0.937,
+            -0.2
+          ]
+        },
+        "gradient boosting | band 0.52": {
+          "sharpe_net": 0.293,
+          "turnover_per_year": 49.4,
+          "time_in_market": 0.632,
+          "sharpe_by_cost": {
+            "0": 0.517,
+            "2": 0.472,
+            "5": 0.405,
+            "10": 0.293,
+            "15": 0.181,
+            "20": 0.07,
+            "30": -0.154
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.325,
+          "random_matched_median_sharpe": 0.356,
+          "sharpe_minus_bh_ci95": [
+            -0.908,
+            -0.092
+          ]
+        },
+        "gradient boosting | band 0.55": {
+          "sharpe_net": 0.375,
+          "turnover_per_year": 24.0,
+          "time_in_market": 0.641,
+          "sharpe_by_cost": {
+            "0": 0.483,
+            "2": 0.462,
+            "5": 0.429,
+            "10": 0.375,
+            "15": 0.321,
+            "20": 0.267,
+            "30": 0.16
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.185,
+          "random_matched_median_sharpe": 0.523,
+          "sharpe_minus_bh_ci95": [
+            -0.803,
+            -0.011
+          ]
+        },
+        "gradient boosting | band 0.6": {
+          "sharpe_net": 0.559,
+          "turnover_per_year": 7.3,
+          "time_in_market": 0.688,
+          "sharpe_by_cost": {
+            "0": 0.592,
+            "2": 0.585,
+            "5": 0.575,
+            "10": 0.559,
+            "15": 0.543,
+            "20": 0.527,
+            "30": 0.494
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.405,
+          "random_matched_median_sharpe": 0.595,
+          "sharpe_minus_bh_ci95": [
+            -0.584,
+            0.121
+          ]
+        },
+        "MLP | band 0.5": {
+          "sharpe_net": 0.204,
+          "turnover_per_year": 62.3,
+          "time_in_market": 0.563,
+          "sharpe_by_cost": {
+            "0": 0.478,
+            "2": 0.423,
+            "5": 0.341,
+            "10": 0.204,
+            "15": 0.066,
+            "20": -0.071,
+            "30": -0.344
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.31,
+          "random_matched_median_sharpe": 0.303,
+          "sharpe_minus_bh_ci95": [
+            -0.902,
+            -0.313
+          ]
+        },
+        "MLP | band 0.52": {
+          "sharpe_net": 0.372,
+          "turnover_per_year": 29.5,
+          "time_in_market": 0.57,
+          "sharpe_by_cost": {
+            "0": 0.502,
+            "2": 0.476,
+            "5": 0.437,
+            "10": 0.372,
+            "15": 0.308,
+            "20": 0.243,
+            "30": 0.114
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.345,
+          "random_matched_median_sharpe": 0.429,
+          "sharpe_minus_bh_ci95": [
+            -0.72,
+            -0.138
+          ]
+        },
+        "MLP | band 0.55": {
+          "sharpe_net": 0.544,
+          "turnover_per_year": 10.9,
+          "time_in_market": 0.617,
+          "sharpe_by_cost": {
+            "0": 0.591,
+            "2": 0.582,
+            "5": 0.568,
+            "10": 0.544,
+            "15": 0.52,
+            "20": 0.497,
+            "30": 0.449
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.52,
+          "random_matched_median_sharpe": 0.536,
+          "sharpe_minus_bh_ci95": [
+            -0.546,
+            0.049
+          ]
+        },
+        "MLP | band 0.6": {
+          "sharpe_net": 0.493,
+          "turnover_per_year": 1.2,
+          "time_in_market": 0.676,
+          "sharpe_by_cost": {
+            "0": 0.498,
+            "2": 0.497,
+            "5": 0.495,
+            "10": 0.493,
+            "15": 0.49,
+            "20": 0.488,
+            "30": 0.483
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.215,
+          "random_matched_median_sharpe": 0.629,
+          "sharpe_minus_bh_ci95": [
+            -0.571,
+            -0.027
+          ]
+        }
+      }
+    },
+    "QQQ": {
+      "buy_hold_sharpe": 0.904,
+      "kind": "equity",
+      "strategies": {
+        "SMA 50/200 crossover": {
+          "sharpe_by_cost": {
+            "0": 0.869,
+            "2": 0.868,
+            "5": 0.866,
+            "10": 0.863,
+            "15": 0.86,
+            "20": 0.857,
+            "30": 0.851
+          },
+          "break_even_bps": null
+        },
+        "12-1 momentum": {
+          "sharpe_by_cost": {
+            "0": 0.797,
+            "2": 0.792,
+            "5": 0.785,
+            "10": 0.773,
+            "15": 0.761,
+            "20": 0.75,
+            "30": 0.726
+          },
+          "break_even_bps": null
+        },
+        "logistic regression | band 0.5": {
+          "sharpe_net": 0.634,
+          "turnover_per_year": 23.8,
+          "time_in_market": 0.897,
+          "sharpe_by_cost": {
+            "0": 0.758,
+            "2": 0.733,
+            "5": 0.696,
+            "10": 0.634,
+            "15": 0.573,
+            "20": 0.511,
+            "30": 0.388
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.11,
+          "random_matched_median_sharpe": 0.744,
+          "sharpe_minus_bh_ci95": [
+            -0.535,
+            -0.015
+          ]
+        },
+        "logistic regression | band 0.52": {
+          "sharpe_net": 0.77,
+          "turnover_per_year": 8.0,
+          "time_in_market": 0.916,
+          "sharpe_by_cost": {
+            "0": 0.811,
+            "2": 0.802,
+            "5": 0.79,
+            "10": 0.77,
+            "15": 0.749,
+            "20": 0.728,
+            "30": 0.687
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.23,
+          "random_matched_median_sharpe": 0.828,
+          "sharpe_minus_bh_ci95": [
+            -0.36,
+            0.07
+          ]
+        },
+        "logistic regression | band 0.55": {
+          "sharpe_net": 0.61,
+          "turnover_per_year": 2.3,
+          "time_in_market": 0.896,
+          "sharpe_by_cost": {
+            "0": 0.622,
+            "2": 0.619,
+            "5": 0.616,
+            "10": 0.61,
+            "15": 0.604,
+            "20": 0.598,
+            "30": 0.586
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.005,
+          "random_matched_median_sharpe": 0.849,
+          "sharpe_minus_bh_ci95": [
+            -0.511,
+            -0.109
+          ]
+        },
+        "logistic regression | band 0.6": {
+          "sharpe_net": 0.796,
+          "turnover_per_year": 0.8,
+          "time_in_market": 0.975,
+          "sharpe_by_cost": {
+            "0": 0.8,
+            "2": 0.799,
+            "5": 0.798,
+            "10": 0.796,
+            "15": 0.794,
+            "20": 0.793,
+            "30": 0.789
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.025,
+          "random_matched_median_sharpe": 0.887,
+          "sharpe_minus_bh_ci95": [
+            -0.248,
+            -0.006
+          ]
+        },
+        "gradient boosting | band 0.5": {
+          "sharpe_net": 0.472,
+          "turnover_per_year": 53.2,
+          "time_in_market": 0.811,
+          "sharpe_by_cost": {
+            "0": 0.735,
+            "2": 0.682,
+            "5": 0.603,
+            "10": 0.472,
+            "15": 0.34,
+            "20": 0.209,
+            "30": -0.053
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.24,
+          "random_matched_median_sharpe": 0.572,
+          "sharpe_minus_bh_ci95": [
+            -0.672,
+            -0.223
+          ]
+        },
+        "gradient boosting | band 0.52": {
+          "sharpe_net": 0.647,
+          "turnover_per_year": 32.4,
+          "time_in_market": 0.832,
+          "sharpe_by_cost": {
+            "0": 0.806,
+            "2": 0.774,
+            "5": 0.726,
+            "10": 0.647,
+            "15": 0.567,
+            "20": 0.488,
+            "30": 0.329
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.44,
+          "random_matched_median_sharpe": 0.664,
+          "sharpe_minus_bh_ci95": [
+            -0.469,
+            -0.066
+          ]
+        },
+        "gradient boosting | band 0.55": {
+          "sharpe_net": 0.872,
+          "turnover_per_year": 16.4,
+          "time_in_market": 0.848,
+          "sharpe_by_cost": {
+            "0": 0.953,
+            "2": 0.936,
+            "5": 0.912,
+            "10": 0.872,
+            "15": 0.832,
+            "20": 0.791,
+            "30": 0.71
+          },
+          "break_even_bps": 5,
+          "random_matched_pctile": 0.89,
+          "random_matched_median_sharpe": 0.744,
+          "sharpe_minus_bh_ci95": [
+            -0.234,
+            0.181
+          ]
+        },
+        "gradient boosting | band 0.6": {
+          "sharpe_net": 0.874,
+          "turnover_per_year": 3.0,
+          "time_in_market": 0.909,
+          "sharpe_by_cost": {
+            "0": 0.888,
+            "2": 0.885,
+            "5": 0.881,
+            "10": 0.874,
+            "15": 0.867,
+            "20": 0.86,
+            "30": 0.845
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.66,
+          "random_matched_median_sharpe": 0.837,
+          "sharpe_minus_bh_ci95": [
+            -0.178,
+            0.121
+          ]
+        },
+        "MLP | band 0.5": {
+          "sharpe_net": 0.686,
+          "turnover_per_year": 43.9,
+          "time_in_market": 0.784,
+          "sharpe_by_cost": {
+            "0": 0.905,
+            "2": 0.861,
+            "5": 0.796,
+            "10": 0.686,
+            "15": 0.577,
+            "20": 0.468,
+            "30": 0.25
+          },
+          "break_even_bps": 0,
+          "random_matched_pctile": 0.835,
+          "random_matched_median_sharpe": 0.563,
+          "sharpe_minus_bh_ci95": [
+            -0.456,
+            0.026
+          ]
+        },
+        "MLP | band 0.52": {
+          "sharpe_net": 0.787,
+          "turnover_per_year": 22.4,
+          "time_in_market": 0.82,
+          "sharpe_by_cost": {
+            "0": 0.897,
+            "2": 0.875,
+            "5": 0.842,
+            "10": 0.787,
+            "15": 0.732,
+            "20": 0.678,
+            "30": 0.568
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.745,
+          "random_matched_median_sharpe": 0.682,
+          "sharpe_minus_bh_ci95": [
+            -0.339,
+            0.124
+          ]
+        },
+        "MLP | band 0.55": {
+          "sharpe_net": 0.729,
+          "turnover_per_year": 7.3,
+          "time_in_market": 0.859,
+          "sharpe_by_cost": {
+            "0": 0.764,
+            "2": 0.757,
+            "5": 0.746,
+            "10": 0.729,
+            "15": 0.711,
+            "20": 0.694,
+            "30": 0.658
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.19,
+          "random_matched_median_sharpe": 0.807,
+          "sharpe_minus_bh_ci95": [
+            -0.341,
+            -0.012
+          ]
+        },
+        "MLP | band 0.6": {
+          "sharpe_net": 0.805,
+          "turnover_per_year": 1.3,
+          "time_in_market": 0.937,
+          "sharpe_by_cost": {
+            "0": 0.811,
+            "2": 0.81,
+            "5": 0.808,
+            "10": 0.805,
+            "15": 0.802,
+            "20": 0.799,
+            "30": 0.793
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.18,
+          "random_matched_median_sharpe": 0.865,
+          "sharpe_minus_bh_ci95": [
+            -0.215,
+            0.019
+          ]
+        }
+      }
+    },
+    "SPY": {
+      "buy_hold_sharpe": 0.826,
+      "kind": "equity",
+      "strategies": {
+        "SMA 50/200 crossover": {
+          "sharpe_by_cost": {
+            "0": 0.628,
+            "2": 0.626,
+            "5": 0.624,
+            "10": 0.62,
+            "15": 0.616,
+            "20": 0.612,
+            "30": 0.605
+          },
+          "break_even_bps": null
+        },
+        "12-1 momentum": {
+          "sharpe_by_cost": {
+            "0": 0.701,
+            "2": 0.693,
+            "5": 0.681,
+            "10": 0.662,
+            "15": 0.642,
+            "20": 0.622,
+            "30": 0.583
+          },
+          "break_even_bps": null
+        },
+        "logistic regression | band 0.5": {
+          "sharpe_net": 0.606,
+          "turnover_per_year": 18.0,
+          "time_in_market": 0.884,
+          "sharpe_by_cost": {
+            "0": 0.712,
+            "2": 0.691,
+            "5": 0.659,
+            "10": 0.606,
+            "15": 0.553,
+            "20": 0.5,
+            "30": 0.395
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.25,
+          "random_matched_median_sharpe": 0.671,
+          "sharpe_minus_bh_ci95": [
+            -0.361,
+            -0.094
+          ]
+        },
+        "logistic regression | band 0.52": {
+          "sharpe_net": 0.712,
+          "turnover_per_year": 4.6,
+          "time_in_market": 0.905,
+          "sharpe_by_cost": {
+            "0": 0.739,
+            "2": 0.734,
+            "5": 0.726,
+            "10": 0.712,
+            "15": 0.699,
+            "20": 0.686,
+            "30": 0.659
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.345,
+          "random_matched_median_sharpe": 0.744,
+          "sharpe_minus_bh_ci95": [
+            -0.226,
+            -0.013
+          ]
+        },
+        "logistic regression | band 0.55": {
+          "sharpe_net": 0.751,
+          "turnover_per_year": 1.1,
+          "time_in_market": 0.936,
+          "sharpe_by_cost": {
+            "0": 0.757,
+            "2": 0.756,
+            "5": 0.754,
+            "10": 0.751,
+            "15": 0.747,
+            "20": 0.744,
+            "30": 0.737
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.215,
+          "random_matched_median_sharpe": 0.786,
+          "sharpe_minus_bh_ci95": [
+            -0.16,
+            -0.004
+          ]
+        },
+        "logistic regression | band 0.6": {
+          "sharpe_net": 0.844,
+          "turnover_per_year": 0.3,
+          "time_in_market": 0.989,
+          "sharpe_by_cost": {
+            "0": 0.845,
+            "2": 0.845,
+            "5": 0.844,
+            "10": 0.844,
+            "15": 0.843,
+            "20": 0.842,
+            "30": 0.841
+          },
+          "break_even_bps": 30,
+          "random_matched_pctile": 0.925,
+          "random_matched_median_sharpe": 0.821,
+          "sharpe_minus_bh_ci95": [
+            -0.019,
+            0.078
+          ]
+        },
+        "gradient boosting | band 0.5": {
+          "sharpe_net": 0.383,
+          "turnover_per_year": 56.1,
+          "time_in_market": 0.782,
+          "sharpe_by_cost": {
+            "0": 0.722,
+            "2": 0.654,
+            "5": 0.553,
+            "10": 0.383,
+            "15": 0.214,
+            "20": 0.046,
+            "30": -0.29
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.545,
+          "random_matched_median_sharpe": 0.357,
+          "sharpe_minus_bh_ci95": [
+            -0.649,
+            -0.273
+          ]
+        },
+        "gradient boosting | band 0.52": {
+          "sharpe_net": 0.54,
+          "turnover_per_year": 35.0,
+          "time_in_market": 0.815,
+          "sharpe_by_cost": {
+            "0": 0.749,
+            "2": 0.708,
+            "5": 0.645,
+            "10": 0.54,
+            "15": 0.436,
+            "20": 0.331,
+            "30": 0.123
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.51,
+          "random_matched_median_sharpe": 0.539,
+          "sharpe_minus_bh_ci95": [
+            -0.456,
+            -0.13
+          ]
+        },
+        "gradient boosting | band 0.55": {
+          "sharpe_net": 0.62,
+          "turnover_per_year": 17.3,
+          "time_in_market": 0.818,
+          "sharpe_by_cost": {
+            "0": 0.723,
+            "2": 0.703,
+            "5": 0.672,
+            "10": 0.62,
+            "15": 0.569,
+            "20": 0.517,
+            "30": 0.414
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.42,
+          "random_matched_median_sharpe": 0.647,
+          "sharpe_minus_bh_ci95": [
+            -0.356,
+            -0.068
+          ]
+        },
+        "gradient boosting | band 0.6": {
+          "sharpe_net": 0.666,
+          "turnover_per_year": 5.8,
+          "time_in_market": 0.837,
+          "sharpe_by_cost": {
+            "0": 0.7,
+            "2": 0.693,
+            "5": 0.683,
+            "10": 0.666,
+            "15": 0.648,
+            "20": 0.631,
+            "30": 0.597
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.31,
+          "random_matched_median_sharpe": 0.709,
+          "sharpe_minus_bh_ci95": [
+            -0.326,
+            0.0
+          ]
+        },
+        "MLP | band 0.5": {
+          "sharpe_net": 0.443,
+          "turnover_per_year": 43.1,
+          "time_in_market": 0.756,
+          "sharpe_by_cost": {
+            "0": 0.705,
+            "2": 0.652,
+            "5": 0.574,
+            "10": 0.443,
+            "15": 0.313,
+            "20": 0.183,
+            "30": -0.076
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.485,
+          "random_matched_median_sharpe": 0.449,
+          "sharpe_minus_bh_ci95": [
+            -0.612,
+            -0.178
+          ]
+        },
+        "MLP | band 0.52": {
+          "sharpe_net": 0.569,
+          "turnover_per_year": 20.0,
+          "time_in_market": 0.778,
+          "sharpe_by_cost": {
+            "0": 0.69,
+            "2": 0.666,
+            "5": 0.63,
+            "10": 0.569,
+            "15": 0.509,
+            "20": 0.449,
+            "30": 0.328
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.435,
+          "random_matched_median_sharpe": 0.591,
+          "sharpe_minus_bh_ci95": [
+            -0.473,
+            -0.062
+          ]
+        },
+        "MLP | band 0.55": {
+          "sharpe_net": 0.74,
+          "turnover_per_year": 8.5,
+          "time_in_market": 0.821,
+          "sharpe_by_cost": {
+            "0": 0.791,
+            "2": 0.781,
+            "5": 0.765,
+            "10": 0.74,
+            "15": 0.715,
+            "20": 0.689,
+            "30": 0.639
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.645,
+          "random_matched_median_sharpe": 0.677,
+          "sharpe_minus_bh_ci95": [
+            -0.279,
+            0.108
+          ]
+        },
+        "MLP | band 0.6": {
+          "sharpe_net": 0.774,
+          "turnover_per_year": 0.8,
+          "time_in_market": 0.961,
+          "sharpe_by_cost": {
+            "0": 0.778,
+            "2": 0.777,
+            "5": 0.776,
+            "10": 0.774,
+            "15": 0.772,
+            "20": 0.769,
+            "30": 0.765
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.255,
+          "random_matched_median_sharpe": 0.803,
+          "sharpe_minus_bh_ci95": [
+            -0.161,
+            0.049
+          ]
+        }
+      }
+    },
+    "TLT": {
+      "buy_hold_sharpe": 0.008,
+      "kind": "equity",
+      "strategies": {
+        "SMA 50/200 crossover": {
+          "sharpe_by_cost": {
+            "0": 0.015,
+            "2": 0.011,
+            "5": 0.005,
+            "10": -0.005,
+            "15": -0.014,
+            "20": -0.024,
+            "30": -0.043
+          },
+          "break_even_bps": 2
+        },
+        "12-1 momentum": {
+          "sharpe_by_cost": {
+            "0": -0.041,
+            "2": -0.055,
+            "5": -0.075,
+            "10": -0.11,
+            "15": -0.145,
+            "20": -0.18,
+            "30": -0.249
+          },
+          "break_even_bps": null
+        },
+        "logistic regression | band 0.5": {
+          "sharpe_net": -0.299,
+          "turnover_per_year": 49.6,
+          "time_in_market": 0.777,
+          "sharpe_by_cost": {
+            "0": 0.111,
+            "2": 0.029,
+            "5": -0.094,
+            "10": -0.299,
+            "15": -0.503,
+            "20": -0.705,
+            "30": -1.106
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.67,
+          "random_matched_median_sharpe": -0.36,
+          "sharpe_minus_bh_ci95": [
+            -0.61,
+            -0.034
+          ]
+        },
+        "logistic regression | band 0.52": {
+          "sharpe_net": -0.066,
+          "turnover_per_year": 20.9,
+          "time_in_market": 0.803,
+          "sharpe_by_cost": {
+            "0": 0.101,
+            "2": 0.068,
+            "5": 0.017,
+            "10": -0.066,
+            "15": -0.15,
+            "20": -0.234,
+            "30": -0.4
+          },
+          "break_even_bps": 5,
+          "random_matched_pctile": 0.73,
+          "random_matched_median_sharpe": -0.134,
+          "sharpe_minus_bh_ci95": [
+            -0.335,
+            0.171
+          ]
+        },
+        "logistic regression | band 0.55": {
+          "sharpe_net": -0.055,
+          "turnover_per_year": 6.3,
+          "time_in_market": 0.835,
+          "sharpe_by_cost": {
+            "0": -0.005,
+            "2": -0.015,
+            "5": -0.03,
+            "10": -0.055,
+            "15": -0.079,
+            "20": -0.104,
+            "30": -0.153
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.465,
+          "random_matched_median_sharpe": -0.046,
+          "sharpe_minus_bh_ci95": [
+            -0.365,
+            0.196
+          ]
+        },
+        "logistic regression | band 0.6": {
+          "sharpe_net": -0.046,
+          "turnover_per_year": 1.5,
+          "time_in_market": 0.823,
+          "sharpe_by_cost": {
+            "0": -0.035,
+            "2": -0.037,
+            "5": -0.041,
+            "10": -0.046,
+            "15": -0.052,
+            "20": -0.058,
+            "30": -0.069
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.325,
+          "random_matched_median_sharpe": -0.004,
+          "sharpe_minus_bh_ci95": [
+            -0.309,
+            0.183
+          ]
+        },
+        "gradient boosting | band 0.5": {
+          "sharpe_net": -0.448,
+          "turnover_per_year": 80.2,
+          "time_in_market": 0.697,
+          "sharpe_by_cost": {
+            "0": 0.207,
+            "2": 0.076,
+            "5": -0.121,
+            "10": -0.448,
+            "15": -0.774,
+            "20": -1.098,
+            "30": -1.736
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.905,
+          "random_matched_median_sharpe": -0.636,
+          "sharpe_minus_bh_ci95": [
+            -0.735,
+            -0.17
+          ]
+        },
+        "gradient boosting | band 0.52": {
+          "sharpe_net": -0.275,
+          "turnover_per_year": 52.2,
+          "time_in_market": 0.715,
+          "sharpe_by_cost": {
+            "0": 0.151,
+            "2": 0.065,
+            "5": -0.062,
+            "10": -0.275,
+            "15": -0.487,
+            "20": -0.698,
+            "30": -1.115
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.835,
+          "random_matched_median_sharpe": -0.408,
+          "sharpe_minus_bh_ci95": [
+            -0.556,
+            -0.001
+          ]
+        },
+        "gradient boosting | band 0.55": {
+          "sharpe_net": -0.056,
+          "turnover_per_year": 24.9,
+          "time_in_market": 0.751,
+          "sharpe_by_cost": {
+            "0": 0.144,
+            "2": 0.104,
+            "5": 0.044,
+            "10": -0.056,
+            "15": -0.155,
+            "20": -0.254,
+            "30": -0.451
+          },
+          "break_even_bps": 5,
+          "random_matched_pctile": 0.875,
+          "random_matched_median_sharpe": -0.195,
+          "sharpe_minus_bh_ci95": [
+            -0.383,
+            0.228
+          ]
+        },
+        "gradient boosting | band 0.6": {
+          "sharpe_net": 0.056,
+          "turnover_per_year": 6.3,
+          "time_in_market": 0.85,
+          "sharpe_by_cost": {
+            "0": 0.103,
+            "2": 0.094,
+            "5": 0.08,
+            "10": 0.056,
+            "15": 0.033,
+            "20": 0.009,
+            "30": -0.037
+          },
+          "break_even_bps": 20,
+          "random_matched_pctile": 0.825,
+          "random_matched_median_sharpe": -0.051,
+          "sharpe_minus_bh_ci95": [
+            -0.201,
+            0.272
+          ]
+        },
+        "MLP | band 0.5": {
+          "sharpe_net": -0.314,
+          "turnover_per_year": 45.8,
+          "time_in_market": 0.636,
+          "sharpe_by_cost": {
+            "0": 0.066,
+            "2": -0.01,
+            "5": -0.124,
+            "10": -0.314,
+            "15": -0.503,
+            "20": -0.692,
+            "30": -1.065
+          },
+          "break_even_bps": 0,
+          "random_matched_pctile": 0.655,
+          "random_matched_median_sharpe": -0.366,
+          "sharpe_minus_bh_ci95": [
+            -0.673,
+            -0.002
+          ]
+        },
+        "MLP | band 0.52": {
+          "sharpe_net": -0.15,
+          "turnover_per_year": 30.0,
+          "time_in_market": 0.643,
+          "sharpe_by_cost": {
+            "0": 0.099,
+            "2": 0.049,
+            "5": -0.025,
+            "10": -0.15,
+            "15": -0.274,
+            "20": -0.398,
+            "30": -0.643
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.725,
+          "random_matched_median_sharpe": -0.235,
+          "sharpe_minus_bh_ci95": [
+            -0.491,
+            0.142
+          ]
+        },
+        "MLP | band 0.55": {
+          "sharpe_net": -0.107,
+          "turnover_per_year": 16.9,
+          "time_in_market": 0.642,
+          "sharpe_by_cost": {
+            "0": 0.033,
+            "2": 0.005,
+            "5": -0.037,
+            "10": -0.107,
+            "15": -0.177,
+            "20": -0.247,
+            "30": -0.387
+          },
+          "break_even_bps": 0,
+          "random_matched_pctile": 0.595,
+          "random_matched_median_sharpe": -0.154,
+          "sharpe_minus_bh_ci95": [
+            -0.457,
+            0.208
+          ]
+        },
+        "MLP | band 0.6": {
+          "sharpe_net": -0.107,
+          "turnover_per_year": 4.0,
+          "time_in_market": 0.767,
+          "sharpe_by_cost": {
+            "0": -0.075,
+            "2": -0.081,
+            "5": -0.091,
+            "10": -0.107,
+            "15": -0.123,
+            "20": -0.138,
+            "30": -0.17
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.265,
+          "random_matched_median_sharpe": -0.02,
+          "sharpe_minus_bh_ci95": [
+            -0.449,
+            0.172
+          ]
+        }
+      }
+    },
+    "XLF": {
+      "buy_hold_sharpe": 0.613,
+      "kind": "equity",
+      "strategies": {
+        "SMA 50/200 crossover": {
+          "sharpe_by_cost": {
+            "0": 0.334,
+            "2": 0.333,
+            "5": 0.33,
+            "10": 0.325,
+            "15": 0.32,
+            "20": 0.316,
+            "30": 0.306
+          },
+          "break_even_bps": null
+        },
+        "12-1 momentum": {
+          "sharpe_by_cost": {
+            "0": 0.244,
+            "2": 0.236,
+            "5": 0.224,
+            "10": 0.205,
+            "15": 0.185,
+            "20": 0.165,
+            "30": 0.126
+          },
+          "break_even_bps": null
+        },
+        "logistic regression | band 0.5": {
+          "sharpe_net": 0.284,
+          "turnover_per_year": 63.5,
+          "time_in_market": 0.703,
+          "sharpe_by_cost": {
+            "0": 0.621,
+            "2": 0.553,
+            "5": 0.452,
+            "10": 0.284,
+            "15": 0.116,
+            "20": -0.052,
+            "30": -0.386
+          },
+          "break_even_bps": 0,
+          "random_matched_pctile": 0.805,
+          "random_matched_median_sharpe": 0.171,
+          "sharpe_minus_bh_ci95": [
+            -0.748,
+            0.056
+          ]
+        },
+        "logistic regression | band 0.52": {
+          "sharpe_net": 0.16,
+          "turnover_per_year": 24.2,
+          "time_in_market": 0.724,
+          "sharpe_by_cost": {
+            "0": 0.287,
+            "2": 0.262,
+            "5": 0.224,
+            "10": 0.16,
+            "15": 0.097,
+            "20": 0.034,
+            "30": -0.092
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.09,
+          "random_matched_median_sharpe": 0.387,
+          "sharpe_minus_bh_ci95": [
+            -0.781,
+            -0.176
+          ]
+        },
+        "logistic regression | band 0.55": {
+          "sharpe_net": 0.265,
+          "turnover_per_year": 7.0,
+          "time_in_market": 0.746,
+          "sharpe_by_cost": {
+            "0": 0.301,
+            "2": 0.294,
+            "5": 0.283,
+            "10": 0.265,
+            "15": 0.247,
+            "20": 0.229,
+            "30": 0.193
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.04,
+          "random_matched_median_sharpe": 0.489,
+          "sharpe_minus_bh_ci95": [
+            -0.658,
+            -0.099
+          ]
+        },
+        "logistic regression | band 0.6": {
+          "sharpe_net": 0.553,
+          "turnover_per_year": 1.1,
+          "time_in_market": 0.944,
+          "sharpe_by_cost": {
+            "0": 0.559,
+            "2": 0.558,
+            "5": 0.556,
+            "10": 0.553,
+            "15": 0.551,
+            "20": 0.548,
+            "30": 0.542
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.28,
+          "random_matched_median_sharpe": 0.586,
+          "sharpe_minus_bh_ci95": [
+            -0.241,
+            0.096
+          ]
+        },
+        "gradient boosting | band 0.5": {
+          "sharpe_net": 0.243,
+          "turnover_per_year": 72.4,
+          "time_in_market": 0.68,
+          "sharpe_by_cost": {
+            "0": 0.616,
+            "2": 0.541,
+            "5": 0.429,
+            "10": 0.243,
+            "15": 0.056,
+            "20": -0.13,
+            "30": -0.5
+          },
+          "break_even_bps": 0,
+          "random_matched_pctile": 0.78,
+          "random_matched_median_sharpe": 0.092,
+          "sharpe_minus_bh_ci95": [
+            -0.675,
+            -0.102
+          ]
+        },
+        "gradient boosting | band 0.52": {
+          "sharpe_net": 0.36,
+          "turnover_per_year": 47.1,
+          "time_in_market": 0.697,
+          "sharpe_by_cost": {
+            "0": 0.602,
+            "2": 0.554,
+            "5": 0.481,
+            "10": 0.36,
+            "15": 0.24,
+            "20": 0.119,
+            "30": -0.122
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.75,
+          "random_matched_median_sharpe": 0.229,
+          "sharpe_minus_bh_ci95": [
+            -0.514,
+            0.015
+          ]
+        },
+        "gradient boosting | band 0.55": {
+          "sharpe_net": 0.445,
+          "turnover_per_year": 24.7,
+          "time_in_market": 0.715,
+          "sharpe_by_cost": {
+            "0": 0.572,
+            "2": 0.546,
+            "5": 0.508,
+            "10": 0.445,
+            "15": 0.381,
+            "20": 0.318,
+            "30": 0.191
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.635,
+          "random_matched_median_sharpe": 0.385,
+          "sharpe_minus_bh_ci95": [
+            -0.432,
+            0.081
+          ]
+        },
+        "gradient boosting | band 0.6": {
+          "sharpe_net": 0.32,
+          "turnover_per_year": 9.6,
+          "time_in_market": 0.72,
+          "sharpe_by_cost": {
+            "0": 0.37,
+            "2": 0.36,
+            "5": 0.345,
+            "10": 0.32,
+            "15": 0.295,
+            "20": 0.271,
+            "30": 0.221
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.165,
+          "random_matched_median_sharpe": 0.454,
+          "sharpe_minus_bh_ci95": [
+            -0.547,
+            -0.053
+          ]
+        },
+        "MLP | band 0.5": {
+          "sharpe_net": 0.194,
+          "turnover_per_year": 72.3,
+          "time_in_market": 0.579,
+          "sharpe_by_cost": {
+            "0": 0.583,
+            "2": 0.505,
+            "5": 0.389,
+            "10": 0.194,
+            "15": 0.0,
+            "20": -0.193,
+            "30": -0.578
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.815,
+          "random_matched_median_sharpe": 0.028,
+          "sharpe_minus_bh_ci95": [
+            -0.731,
+            -0.154
+          ]
+        },
+        "MLP | band 0.52": {
+          "sharpe_net": 0.342,
+          "turnover_per_year": 38.6,
+          "time_in_market": 0.581,
+          "sharpe_by_cost": {
+            "0": 0.548,
+            "2": 0.507,
+            "5": 0.445,
+            "10": 0.342,
+            "15": 0.238,
+            "20": 0.135,
+            "30": -0.07
+          },
+          "break_even_bps": null,
+          "random_matched_pctile": 0.675,
+          "random_matched_median_sharpe": 0.266,
+          "sharpe_minus_bh_ci95": [
+            -0.583,
+            0.019
+          ]
+        },
+        "MLP | band 0.55": {
+          "sharpe_net": 0.565,
+          "turnover_per_year": 15.2,
+          "time_in_market": 0.678,
+          "sharpe_by_cost": {
+            "0": 0.644,
+            "2": 0.628,
+            "5": 0.604,
+            "10": 0.565,
+            "15": 0.525,
+            "20": 0.486,
+            "30": 0.407
+          },
+          "break_even_bps": 2,
+          "random_matched_pctile": 0.79,
+          "random_matched_median_sharpe": 0.384,
+          "sharpe_minus_bh_ci95": [
+            -0.308,
+            0.228
+          ]
+        },
+        "MLP | band 0.6": {
+          "sharpe_net": 0.634,
+          "turnover_per_year": 2.5,
+          "time_in_market": 0.864,
+          "sharpe_by_cost": {
+            "0": 0.646,
+            "2": 0.643,
+            "5": 0.64,
+            "10": 0.634,
+            "15": 0.628,
+            "20": 0.622,
+            "30": 0.609
+          },
+          "break_even_bps": 20,
+          "random_matched_pctile": 0.795,
+          "random_matched_median_sharpe": 0.545,
+          "sharpe_minus_bh_ci95": [
+            -0.167,
+            0.208
+          ]
+        }
+      }
+    }
+  }
+}
