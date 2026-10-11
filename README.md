@@ -26,7 +26,7 @@ may exist, but it was far too small to pay for its own trading costs.
 
 ## Results (mean over 10 assets)
 
-| Strategy | Sharpe before costs | Sharpe after costs | CAGR | Max drawdown | Round trips / yr | Beat B&H | Sig. better | Sig. worse |
+| Strategy | Sharpe before costs | Sharpe after costs | CAGR | Max drawdown | Trades / yr | Beat B&H | Sig. better | Sig. worse |
 |---|---|---|---|---|---|---|---|---|
 | buy & hold | 0.65 | 0.65 | 14.8% | -46% | 0.1 | - | - | - |
 | SMA 50/200 crossover | 0.49 | 0.48 | 8.8% | -43% | 1.5 | 0/10 | 0 | 0 |
@@ -46,7 +46,7 @@ Direction accuracy (mean over assets): logistic regression 52.0%, gradient boost
 
 - Learned models called direction correctly less often than a model that always says "up". In a rising market most of
   their positive performance is just being long most of the time.
-- Gross of costs they reach buy-and-hold's Sharpe and no more. Their 56-78 round trips a year then cost them roughly
+- Gross of costs they reach buy-and-hold's Sharpe and no more. Their 56-78 trades a year (each entry or exit counts as one) then cost them roughly
   0.3-0.4 of Sharpe, so after costs they are significantly worse than buy-and-hold on 5-7 of 10 assets.
 - They do score above the shuffled-label control (net 0.24-0.35 vs 0.10), so there may be a weak signal, but far too
   weak to pay for its own turnover.
