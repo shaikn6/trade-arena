@@ -1,8 +1,14 @@
 # trade-arena
 
-An honest answer to "which model should trade this?": classic rules and three learned models (logistic regression,
-gradient boosting, MLP) on 10 real assets (US stocks, ETFs, BTC, ETH), tested **walk-forward**, **net of costs**,
-against buy-and-hold, with bootstrap confidence intervals and a shuffled-label control.
+[![CI](https://github.com/shaikn6/trade-arena/actions/workflows/ci.yml/badge.svg)](https://github.com/shaikn6/trade-arena/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](.github/workflows/ci.yml)
+
+**An honest answer to "which model should trade this?": classic rules and three learned models (logistic regression,
+gradient boosting, MLP) on 10 real assets (US stocks, ETFs, BTC, ETH), tested walk-forward, net of costs,
+against buy-and-hold, with bootstrap confidence intervals and a shuffled-label control.**
+
+To reproduce the table below, see [Quickstart](#quickstart) (about 2 minutes after the price download).
 
 ![results](results.png)
 
@@ -65,7 +71,7 @@ Direction accuracy (mean over assets): logistic regression 52.0%, gradient boost
   terms before redistributing results built on it.
 - Not investment advice. Nothing here is a trading system.
 
-## Run
+## Quickstart
 
 ```bash
 pip install yfinance pandas numpy scikit-learn matplotlib pytest
