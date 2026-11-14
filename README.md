@@ -80,3 +80,6 @@ pip install yfinance pandas numpy scikit-learn matplotlib pytest
 python -c "import yfinance as yf; yf.download(['SPY','QQQ','IWM','TLT','GLD','XLF','AAPL','JPM','BTC-USD','ETH-USD'], start='2010-01-01', auto_adjust=True, progress=False)['Close'].to_csv('prices.csv')"
 python run.py && python -m pytest tests   # ~2 min; 9 tests incl. a look-ahead leak test
 ```
+
+---
+<sub>Part of [Nagizaaz Shaik's open-source work](https://github.com/shaikn6) · [all repositories](https://github.com/shaikn6?tab=repositories)</sub>
