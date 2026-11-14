@@ -1,5 +1,7 @@
 # trade-arena
 
+> **A walk-forward bake-off of 10 trading strategies that ends in the honest answer: nothing beat buy-and-hold.**
+
 [![CI](https://github.com/shaikn6/trade-arena/actions/workflows/ci.yml/badge.svg)](https://github.com/shaikn6/trade-arena/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](.github/workflows/ci.yml)
