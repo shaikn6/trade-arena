@@ -61,6 +61,17 @@ Direction accuracy (mean over assets): logistic regression 52.0%, gradient boost
 - Simple, slow rules (SMA crossover, momentum) lose little to costs but still do not beat holding; they trim average
   max drawdown only slightly (-43% and -44% vs -46%) while giving up about 5-6 points of annual return.
 
+## Follow-up: is it turnover or prediction? (`study.py` -> `study.json`)
+
+`python study.py` reruns the same walk-forward setup and adds three checks: a no-trade band (enter above p, exit below
+1 - p, for p in 0.50/0.52/0.55/0.60), the per-trade cost (0-30 bps grid) at which each strategy's net Sharpe still matches
+buy-and-hold, and a control of 200 random long/flat paths with the same time in market and switch rate as each model.
+
+- Across 120 model x band x asset rows, no net-Sharpe-minus-buy-and-hold 95% CI lies above zero; 39 lie below it.
+- 86 of 140 strategy rows (models and rules) do not match buy-and-hold's Sharpe even at zero cost.
+- 15 of 120 rows beat 95% of their matched random paths, against about 6 expected by chance, so the timing signal is
+  weak at best. Wider bands cut turnover but push the strategy toward buy-and-hold rather than past it.
+
 ## Caveats (read these)
 
 - This is one sample of history, 2015-2026, mostly a bull market, and crypto has a shorter window (BTC from 2019,
